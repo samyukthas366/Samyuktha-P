@@ -1,0 +1,311 @@
+####INPUTS FORMS####
+print("hellosam")
+print("hi")
+a=int(input("enter the number"))
+b=int(input("enter the number"))
+c=a+b
+print(c)
+s=input("enter the number")
+n=list(map(int,s.split(" ")))
+print(n)
+d=float(input("enter the number"))
+print(d)
+m=bool(input("enter the number"))
+print(m)
+l=bool(input("enter the number"))
+print(l)
+
+
+######(F_STRINGS):########
+name="samyuktha"
+age=20
+fathers="srinivasulu"
+mother="sunitha"
+sister="lahari"
+print("i am "+name,"and i am"+str(age),"years old and my father name is"+fathers,"my mom name is"+mother,"and i have one sibbling"+sister)
+print(f"my name is{name},and i am {age},my father name is{fathers},my mom name is{mother}and my is {sister}")
+
+
+
+####DATASTRUCTERS:#######
+***primitive****
+1.a=90        
+ b=799
+2.a=90.989
+3.b=True
+  c=False
+4.d="sam"
+
+***non primitive****
+#####5.list#####
+l=input("enter the number")
+s=list(map(int,l.split(",")))
+print(s)
+d=[]
+d.append(s)
+print(d)
+print(len(s))
+print(type(s))
+print(s.append(546))
+print(s.pop())
+print(s.sort())
+print(s.reverse())
+print(s[0:3])
+print(s[0:900])
+print(s.insert(0,3454647))
+print(len(s))
+print(s.count(2))
+print(s)
+print(s[0:9:-1])
+print(s[0:9:1])
+
+###6.Tuple###
+a=input("enter the number")
+b=tuple(map(int,a.split(" ")))
+print(b)
+print(len((b)))
+#print(b.append(354))(because it is immutable so we can not change or remove or etc)
+print(b[0])
+print(b[0:9:1])
+print(b)
+
+#####7.set#####
+a=input("enter the number")
+b=set(map(int,a.split(" ")))
+print(b)
+print(len(b))
+#print(b.append(9000))(#####here the set is an immutable there will no any kind of changes in set )
+#print(b.sort())
+print(b)
+#print(b[0])(####set is unordered so there will be no any kind of the index))))
+#print(b[5])
+
+###8.dictionary###
+a={name:"sam",age=20,class:"ECE"}
+print(a)
+print(type(a))
+print(id(a))
+
+
+
+
+#######operations in python:##########
+###1.arthemetic operations((),**,*,/,//,%,+,-)
+a=90
+b=987
+print(a*b/b//a+b**a*a-a)
+
+####2.comparision/relational(><==!=)
+print(a<90)
+print(b>87)
+
+###3.logical(and.or,not)
+print(a>90 and b<90)
+print(a<89 or b<9000)
+print(not(a>96))
+
+###4.assignment(+=,-=,==,!=,>=,<=)
+a+=6
+b-=67
+print(a+b)
+
+####5.bitwise(and,or,not,xor,leftshift,rightshift)
+program:
+a=10
+b=50
+print(a<b and b>=67)
+
+####6.identity(is,is not)
+program::
+l=23
+k=89
+print(l is k)
+print(k is 677)
+
+####7.membership(in,notin)
+program::
+a=["sam","jam","jimina"]
+print("sam" in a)
+print("jimina not in a)
+
+
+######STRINGS########  ## 0   1   2   3   4  5  6 7  8  9 10 11  12 13 14
+s=input("enter the name")#p   y   t   h   o  n    n  a  r  a  y  a  n  a
+print(s)               #-15 -14 -13 -12 -11 -10-9 -8-7 -6 -5 -4 -3  -2 -1                       -
+print(len(s))
+print(s[0])
+print(s[1:90])
+print(s[0:4:-1])#it is in reverse order
+print(s[1:-14:1])
+print(s[1:5:-1])# order so there will ne an empty string is printed
+print(s[1:-14:1])###reverseorder
+print(s[1:5:-1])###reverse order
+print(s)
+print(s.upper())
+print(s.lower())
+print(s.capitalize())
+print(s.isupper())
+print(s.islower())
+print(s.startswith("o"))
+print(s.endswith("p"))
+print(s.swapcase())
+a="2"
+b="90"
+c=a+b
+print(c)
+m=" ".join([a,b])
+print(m)
+str="python narayana"
+print(str[0])
+print(str[1])
+print(str[6])
+print(str[7])
+print(str[-1])
+print(str[-0])
+print(str[-2])
+print("th" in str)
+print("a" in str and "n" in str)
+print(str)
+a=str.count("n")
+print(a)
+
+
+
+#######LOOPING STATEMENTS######
+##FOR LOOP
+##WHILE LOOP
+a=input("enter the numbers which are been separated by spaces")
+b=a.split()
+print(b)
+count=0
+for numbers in b:
+    count+=1
+print(count)
+for i in range(0,len(b)):
+    b[i]=int(b[i])
+maximum_number=b[0]
+for i in b:
+    if(numbers >  maximum_number):
+        maximum_number=numbers
+print(f"the maximum number is :{maximum_number}")
+a=input("enter the numbers which are been separated by spaces:")
+b=a.split()
+print(b)
+for i in range(0,len(b)) :
+    b[i]=int(b[i])
+    print(b[i])
+    print(type(b[i]))
+a=input("enter the number which is seperated by space")
+b=a.split()
+print(b)
+count=0
+for i in b:
+    count+=1
+print(f"the length of the list is:{count}")
+for i in range(count):
+    b[i]=int(b[i])
+print(b[i])
+minimum_number=b[0]
+for i in b:
+    if(b<minimum_number):
+       minimum_number=b
+print(f"the minimum is:{minimum_number}")
+a=input("enter the numbers which are been separated by spaces:")
+print(a)
+count=0
+for i in a:
+    count=count+1
+    print(count)
+    if(count==0):
+        print("ok")
+    else:
+        print("ok no")
+else:
+    print("ok ok ok ok ok")
+
+
+a=10,30,5606,56445,45646
+total=0
+for i in a:
+    total+=int(i)
+    print(total)
+total=0
+for i in range(10000):
+    total+=i
+print(f"the total is:{total}")
+
+
+
+FUNCTIONS:::::::
+######FUNCTIONS######
+a=input("enter the name")
+def greet():
+    print(a)
+    print("good morning")
+greet()
+###########
+def names(name):
+    print("hi",name)
+    print("good morning")
+names('sam')
+################
+import random
+l=['sam','lahari','jimina','v','junkkook','suga','rm','jin','jhope']
+a=random.choice(l)
+def names(a):
+    print("hi",a)
+    print("good morning")
+names(a)
+################
+for i in range(56):
+    print(i)
+    if(i==56):
+        break
+        i=i+1
+def names(i):
+    print("hi",i)
+    print("good morning")
+names(i)
+
+###############
+count=0
+while count<90:
+    print(count)
+    count=count+1
+    if(count==80):
+        print("hi")
+        break
+def names(count):
+    print("hi",count)
+    print("you should pay these much amount")
+names(count)
+##########program:::::;
+def greet():
+    print("hi ,good morning,how can i help you")
+greet()
+def greeting():
+    print("thankyou for visting")
+a=int(input("enter the age "))
+bill=0
+if(a>10 and a<15):
+    print("you should pay the 1/4 amount")
+    bill=100
+elif(10<20):
+    print("you should pay the half amount")
+    bill=230
+else:
+    print("you should pay full amount")
+    bill=500
+print(f"you need to pay this much amount ,{bill}")
+greeting()
+
+ 
+    
+    
+
+    
+
+
+    
+
+
