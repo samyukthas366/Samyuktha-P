@@ -254,6 +254,16 @@ for i in range(10000):
     total+=i
 print(f"the total is:{total}")
 
+7>>>>::
+num(5)
+num=5
+for i in range(0,num):#0,1,2,3
+    if(i%num==0):
+        print("not prime")
+    else:
+        print("prime")
+
+
 #############WHILE LOOP:
 i=0
 while i<6:
@@ -289,6 +299,15 @@ if(total==pal):
     print("palindrome")
 else:
     print("not palindrome")
+##>>>::
+p=5
+i=1
+while(i<=p):  #1,2,3,4,5
+    i=i+1
+    if(i%p==0):
+        print("not prime")
+    else:
+        print("prime")
 
 
 
@@ -361,9 +380,79 @@ else:
 print(f"you need to pay this much amount ,{bill}")
 greeting()
 
+######PROGRAMMM###
+import math
+def area(height,width):
+    area=height*width
+    a=(area/coverage)
+    print(a)
+    print(f"to paint the wall it requried an {math.ceil(a)} cans")
+
+height=int(input("enter the number"))
+width=float(input("enter the number"))
+coverage=8
+area(height,width)
+
+
+#####PROGRAM####
+import random
+import math
+a=input("enter the numbers which are been separated by spaces")
+height=list(map(int,a.split(" ")))
+print(height)
+b=input("enter the numbers which are been separated by spaces")
+width=list(map(float,b.split(" ")))
+print(width)
+coverage=10
+e=random.choice(height)
+f=random.choice(width)
+def area(e,f):
+    m=e*f
+    n=m/coverage
+    print(f"the total can are been requried for the given area is{math.ceil(n)}")
+area(e,f)
+###########PROGRAM#####
+def num(a):
+    if(a%2==0 and a%3==0 and a%4==0):
+        print("its an not  prime number")
+    else:
+        print("its  an prime number")
+
  
-    
-    
+
+
+#######IMPORT MATH AND RANDOM MODULES####
+import math
+def area(height,width):
+    area=height*width
+    a=(area/coverage)
+    print(a)
+    print(f"to paint the wall it requried an {math.ceil(a)} cans")
+
+height=int(input("enter the number"))
+width=float(input("enter the number"))
+coverage=8
+area(height,width)
+
+
+
+import random
+import math
+a=input("enter the numbers which are been separated by spaces")
+height=list(map(int,a.split(" ")))
+print(height)
+b=input("enter the numbers which are been separated by spaces")
+width=list(map(float,b.split(" ")))
+print(width)
+coverage=10
+e=random.choice(height)
+f=random.choice(width)
+def area(e,f):
+    m=e*f
+    n=m/coverage
+    print(f"the total can are been requried for the given area is{math.ceil(n)}")
+area(e,f)
+
 
     
 
