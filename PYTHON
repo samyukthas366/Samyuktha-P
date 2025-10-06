@@ -454,6 +454,82 @@ def area(e,f):
 area(e,f)
 
 
+
+
+#############DICTIONARY::::::
+a={"sam":1234,"lah":345,"srinivas":567,"suni":789,"ram":987,"jimin":867,"v":36}
+print(a)
+b={"sam":1234,
+   "lah":345,
+   "srinivas":567,
+   "suni":789,
+   "ram":987,
+   "jimin":867,
+   "v":36
+}
+print(b)
+c=dict({"sam":1234,"sam":1234,"sam":1234,"suni":789,"ram":987,"jimin":867,"v":36})
+print(c)
+print(a.get("sam"))
+print(a["sam"])
+a["sam"]=346547
+print(a)
+a["sam"]={4354,"sam","sam",34657,4575687,5768,4586678}
+print(a)
+a["lah"]=[235436,547658,5676,5465.657,567.686]
+a["madhav"]={2343,4546,6867,678}
+print(a)
+print(a.items())
+print(a.values())
+print(a.keys())
+del a["ram"]
+print(a)
+print(a.pop("v"))
+print(a)
+print(a.popitem())
+print(len(a))
+#a = {"name": "sam", "friend": "sam", "enemy": "tom"}
+print(list(a.values()).count("sam"))  # Output: 2
+print(list(a.values()).count("sam"))
+print(list(a.keys()).count("srinivas"))
+print(a)
+a["ddd"]={546,565,5676,867,867}
+print(a)
+print(list(a.items()).count("madhav"))
+p={2:45,2:"rgh",3.3:657,True:"grt",-445:464}
+print(p)
+for i in a:
+    print(i)
+    print(a[i])
+a={"v":123,"c":3465,"d":123,"b":346457,"b":123,"c":7567,}
+print(list(a.keys()).count("v"))
+print(list(a.values()).count(123))
+h={"sam":99,
+   "lah":89,
+   "srinivas":79,
+   "sdgd":46
+}
+grade={}
+for student in h:
+    marks=h[student]
+    if(marks>90):
+        grade[student]="A+"
+    elif(marks>80):
+        grade[student]="A"
+    elif(marks>70):
+        grade[student]="B+"
+    elif(marks>60):
+        grade[student]="B"
+    elif(marks>50):
+        grade[student]="C"
+    elif(marks>40):
+        grade[student]="D"
+    else:
+        grade[student]="fail"
+    print(grade)
+
+
+
     
 
 
