@@ -526,7 +526,7 @@ for student in h:
         grade[student]="D"
     else:
         grade[student]="fail"
-    print(grade)
+print(grade)
 
 
 
