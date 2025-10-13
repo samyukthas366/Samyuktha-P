@@ -930,7 +930,7 @@ print(c)
 final=(b*c*r)
 print(final)
 
-
+############calculator############
 def addition(b,c):
     return b+c
 def subtraction(b,c):
@@ -962,6 +962,52 @@ num1=int(input("enter the number"))
 calculate=operations_dict[r]
 output=calculate(num,num1)
 print(f"{num},{r},{num1}={output}")
+
+
+##############calculator###############
+(1) 
+def add(a,b):
+    return a+b
+def subtraction(a,b):
+    return a-b
+def multiplication(a,b):
+    return a*b
+def power(a,b):
+    return a**b
+def division(a,b):
+    return a/b
+def floor_division(a,b):
+    return a/b
+def mod(a,b):
+    return a%b
+dict_operations={
+    "+":add,
+    "-":subtraction,
+    "*":multiplication,
+    "/":division,
+    "//":floor_division,
+    "%":mod
+}
+num=int(input("enter the number"))
+for i in dict_operations.keys():
+    print(i)
+u=(input("pick the operators"))
+i=dict_operations[u]
+num1=(int(input("enter the number")))
+ot=i(num,num1)
+print(f"{num},{u},{num1}")
+
+(2)
+num=int(input("enter the number"))
+for i in dict_operations.keys():
+    print(i)
+t=input("pick the operation")
+d=dict_operations[t]
+num1=int(input("enter the number"))
+r=d(num,num1)
+print(f"{num},{d},{num1}")
+
+
 
 
 
