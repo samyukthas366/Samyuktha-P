@@ -529,6 +529,446 @@ for student in h:
 print(grade)
 
 
+a={"sam":1234,"lah":345,"srinivas":567,"suni":789,"ram":987,"jimin":867,"v":36}
+print(a)
+b={"sam":1234,
+   "lah":345,
+   "srinivas":567,
+   "suni":789,
+   "ram":987,
+   "jimin":867,
+   "v":36
+}
+print(b)
+c=dict({"sam":1234,"sam":1234,"sam":1234,"suni":789,"ram":987,"jimin":867,"v":36})
+print(c)
+print(a.get("sam"))
+print(a["sam"])
+a["sam"]=346547
+print(a)
+a["sam"]={4354,"sam","sam",34657,4575687,5768,4586678}
+print(a)
+a["lah"]=[235436,547658,5676,5465.657,567.686]
+a["madhav"]={2343,4546,6867,678}
+print(a)
+print(a.items())
+print(a.values())
+print(a.keys())
+del a["ram"]
+print(a)
+print(a.pop("v"))
+print(a)
+print(a.popitem())
+print(len(a))
+#a = {"name": "sam", "friend": "sam", "enemy": "tom"}
+print(list(a.values()).count("sam"))  # Output: 2
+print(list(a.values()).count("sam"))
+print(list(a.keys()).count("srinivas"))
+print(a)
+a["ddd"]={546,565,5676,867,867}
+print(a)
+print(list(a.items()).count("madhav"))
+p={2:45,2:"rgh",3.3:657,True:"grt",-445:464}
+print(p)
+for i in a:
+    print(i)
+    print(a[i])
+a={"v":123,"c":3465,"d":123,"b":346457,"b":123,"c":7567,}
+print(list(a.keys()).count("v"))
+print(list(a.values()).count(123))
+h={"sam":99,
+   "lah":89,
+   "srinivas":79,
+   "sdgd":46
+}
+grade={}
+for student in h:
+    marks=h[student]
+    if(marks>90):
+        grade[student]="A+"
+    elif(marks>80):
+        grade[student]="A"
+    elif(marks>70):
+        grade[student]="B+"
+    elif(marks>60):
+        grade[student]="B"
+    elif(marks>50):
+        grade[student]="C"
+    elif(marks>40):
+        grade[student]="D"
+    else:
+        grade[student]="fail"
+print(grade)
+from linecache import clearcache
+from smtplib import bCRLF
+
+from functions56 import names1
+
+p={"s":{"sam":12334},"df":{43,436457}}
+print(p["s"]["sam"])
+a={"name":"samyuktha",
+   "age":20,
+   "rollno":4,
+   "cource":"python"
+}
+q={"name1":"lahari",
+   "age":18,
+   "rollno":5,
+   "course":"c++"
+}
+def new_data(name,age,roll_no,cource):
+    new_dict={}
+    new_dict["Name"]=name
+    new_dict["Age"]=age
+    new_dict["Roll_no"]=roll_no
+    new_dict["Cource"]=cource
+    q.update(new_dict)
+new_data("jay sri radha krishna",20,2354,"python")
+print(q)
+
+
+def a(*age):
+    d={}
+    d["Age"]=age
+    d["Age1"]=age
+    d["Age2"]=age
+    d["Age3"]=age
+    q.update(d)
+a(23,34,56,67)
+print(q)
+
+def a(*cource):
+    d={}
+    d["Age"]=cource
+    d["Age1"]=cource
+    d["Age2"]=cource
+    d["Age3"]=cource
+    q.update(d)
+a("p")
+print(q)
+
+def a(*name):
+    d={}
+    d["Name"]=name
+    d["Name1"]=name
+    d["Name2"]=name
+    d["Name3"]=name
+    q.update(d)
+a("p")
+print(q)
+print(q)
+
+
+############project slicent auction program########
+import os
+def bidding_data(bidders_detailes):
+    heighest_bid=0
+    winner=(" ")
+    for bidder in bidders_detailes:
+        bidder_price=bidders_detailes[bidder]
+        if(bidder_price>heighest_bid):
+            heighest_bid=bidder_price
+            winner=bidder
+    print(f"the winner is{winner} with abid price of {heighest_bid}")
+bidder_new={}
+end_of_bidding_data=False
+while not end_of_bidding_data:
+    name=input("enter the name of biddder?")
+    price=int(input("enter the amount for bidding"))
+    bidder_new[name]=price
+    more_bidders=input("enter more bidders? yes or no").lower()
+    if(more_bidders=="no"):
+        end_of_bidding=True
+        find_winner(bidder_new)
+def numbers(a,b):
+    c=a+b
+    print(c)
+numbers(2,3)
+def nambers(a,b):
+    c=a+b
+    print(c)
+v=nambers(4,4)
+print(v)
+def name(a,b):
+    c=a+b
+    return c.title()
+print(name("samyuktha","srinivas"))
+
+def names(a,b):
+    c=a.title()
+    d=b.title()
+    return (f"{c},{d}")
+e=names("samyuktha srinivas","lahari srinivas")
+print(e)
+
+def names(a,b):
+    c=a.title()
+    d=b.title()
+    return (f"{c},{d}")
+e=names("samyuktha srinivas","lahari srinivas")
+print(e)
+import statistics
+def mean_median_mode(list1):
+    return [statistics.mean(list1),statistics.median(list1),statistics.mode(list1)]
+print(mean_median_mode([1,2,3,4,4,5,6,6,7,7,8,8,9,9]))
+
+import statistics
+def mean_median_mode(list1):
+    return statistics.mean(list1),statistics.median(list1),statistics.mode(list1)
+print(mean_median_mode([1,2,3,4,4,5,6,6,7,7,8,8,9,9]))
+
+
+import statistics
+def mean_median_mode(list1):
+    return {statistics.mean(list1), statistics.median(list1),statistics.mode(list1)}
+print(mean_median_mode([1,2,3,4,4,5,6,6,7,7,8,8,9,9]))
+
+import statistics
+def mean_median_mode(list1):
+    return [statistics.mean(list1),statistics.median(list1),statistics.mode(list1)]
+a,b,c=(mean_median_mode([1,2,3,4,4,5,6,6,7,7,8,8,9,9]))
+print(f"median is{a}\n median is {b}\n mode is{c}")
+
+import statistics
+def mean_median_mode(list1):
+    return statistics.mean(list1),statistics.median(list1),statistics.mode(list1)
+    print("okkkkkkkkkkkkk")
+print(mean_median_mode([1,2,3,4,4,5,6,6,7,7,8,8,9,9]))
+
+def a(*b):
+    return(f"sum of the numbers is{sum(b)}")
+print(a(5,7,8,9,67))
+
+def a(*b):
+    return(f"sum of the numbers is{(b)}")
+print(a(5,7,8,9,67))
+
+def a(*b):
+    return(f"sum of the numbers is{sum(b)}")
+print(a(2,456,576,687))
+p=[2.3,4,34,34,5,6,7,78,87,56,3545,3454,6,56]
+
+def a(*a):
+    c=a
+    return a
+print(a(2,4,4,5,6,76,4,565,45,45))
+
+def a(b,c):
+    c=b+c
+    return c
+print(a(2,3))
+s=(a(2,3))
+print(s)
+
+def a(*b):
+    c=(f"sum of the numbers is{sum(b)}")
+    return c
+e=a(2,3,4,4,5,6,66)
+print(e)
+
+def name(a,b):
+    c=a.title()
+    d=b.title()
+    return c,d
+print(name("samyuktha","srinivas"))
+def name(a):
+    c=a.title()
+    return c
+print(name("sam is very good girl"))
+
+def names(a,b):
+    c=a.capitalize()
+    d=b.capitalize()
+    return c,d
+print(names("sam","jogi"))
+
+def names(a,b):
+   if(a==0 and  b==0):
+       return("the values of both are been zero")
+   else:
+       return("the values are not been zeroes")
+var1=int(input("enter the number"))
+var2=int(input("enter the number"))
+print(names(var1,var2))
+
+def year(a,b,c):
+    for i in year():
+        if(a/4==0):
+            return("it is an leap year")
+        else:
+            return("not leap year")
+    else:
+        return("ok")
+print(year(2024,2025,2020))
+def a(*year):
+    for i in year:
+       if(i%400==0):
+           return("its an leap year")
+       else:
+           return("not an leap year")
+    else:
+       print("ok")
+print(a(2000,2400,2025,2040))'''
+
+'''def a(b,c):
+    d=b+c,b-c,b*c,b/c,b//c,b%c
+    return d
+print(a(2,3))
+
+def a(*b):
+    c=(f"sum of the numbers is{sum(b)}")
+    return c
+print(a(2,3,4,5,5,667,678,56))
+
+def a(**b):
+    c = f"Sum of the values is {sum(b.values())}"
+    return c
+
+print(a(one=35, two=3464, three=5465))
+
+
+
+
+def a(**b):
+    c=f"sum is{sum(b.values())}"
+    return c
+print(a(one=1,two=3,three=5))
+
+def a(h):
+    c=f"sum is{sum(h.values())}"
+    return c
+print(a({1:34,2:34543,3:54756}))
+
+def a(b):
+    c = f"the count is{list(b.keys()).count(1)}"
+    d=f"count is{list(b.values()).count(64)}"
+    return c
+    return c
+
+print(a({1:325,1:5657, 1:64, 1:5465}))
+d={1:3453,2:34546,3:54768,4354:5476,4354:766}
+print(d)
+print(list(d.keys()).count(1))
+print(list(d.values()).count(3453))
+print(len(d))
+print(d.values())
+d[1]=546547
+print(d)
+print(d)
+
+
+dict={1:234,2:34,3:5654,5:5476,6:56879}
+print(dict)
+print(dict.get(1))
+print(dict[2])
+print(dict.values())
+print(dict.keys())
+print(dict.items())
+print(dict.pop(6))
+print(dict.popitem())
+dict[2]=[{35:446,5:3457567,76:56876}]
+print(dict)
+d={}
+d.update(dict)
+print(d)
+def a(b):
+    c=f"sum is{sum(b.values())}"
+    return c
+print(a({1:324,2:345,3:456}))
+
+def a(*b):
+    c=f"sum is {sum(b)}"
+    return c
+print(a(2,3,4,5,5,66,7,7))
+
+def a(b):
+    c=f"sum is {sum(b.values())}"
+    return c
+print(a({1:345,"sam":123,"lah":345}))
+
+def a(**b):
+    c=f"sum is {(sum(b.values())*3)}"
+    return c
+print(a(s=1,d=2,j=3,t=9))
+
+
+
+def a(b,c):
+    c=b+c
+    return c
+o=a(2,3)
+print(o)
+print(o+6)
+
+def a(b):
+    return b+1
+def s(t,i):
+    u=t+i
+    return u
+e=s(4,5)
+final=a(e)
+print(final)
+
+def a(c):
+    return c+2
+def s(r,u):
+    y=r+u
+    return y
+f=s(5,6)
+d=a(f)
+print(d)
+print(d*2)
+
+def a(b):
+    return b
+b=int(input("enter the number"))
+c=input("enter the if: + or - or * or ** or %")
+def s(g):
+    return g
+r=s(9)
+print(c)
+final=(b*c*r)
+print(final)
+
+
+def addition(b,c):
+    return b+c
+def subtraction(b,c):
+    return b-c
+def multiplication(b,c):
+    return b*c
+def dividion(b,c):
+    return b/c
+def floor_division(b,c):
+    return b//c
+def mod(b,c):
+    return b%c
+def power(b,c):
+    return b**c
+operations_dict={
+    "+":addition,
+    "-":subtraction,
+    "*":multiplication,
+    "/":dividion,
+    "//":floor_division,
+    "%":mod,
+    "**":power
+}
+num=int(input("enter the number"))
+for i in operations_dict.keys():
+    print(i)
+r=input("pick the operations:")
+num1=int(input("enter the number"))
+calculate=operations_dict[r]
+output=calculate(num,num1)
+print(f"{num},{r},{num1}={output}")
+
+
+
+
+
+
+
 
     
 
