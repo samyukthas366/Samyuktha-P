@@ -182,6 +182,77 @@ a=str.count("n")
 print(a)
 
 
+str="samyukthasrinivas penumuri"
+print(len(str))
+print(str[0])
+print(str[5])
+print(str[40:400])
+print(str[-9:19])
+print(str[9])
+print(str[1:9:4])
+print(str[-1:9:1])
+print(str[-19:400:1])
+print(str[-1:-9:1])
+print(str[12:12:1])
+print(str[12:12])
+print(len(str))
+print(str.count("s"))
+print(str.title())
+print(str.capitalize())
+print(str.swapcase())
+print(str.upper())
+print(str.lower())
+print(str.isupper())
+print(str.islower())
+print(str.isdigit())
+print(str.isalpha())
+print(str.isalpha())
+print(str.endswith("s"))
+print(str.startswith("s"))
+print(5*str)
+print(str*4)
+print(str*2)
+a="w"
+b="r"
+c="u"
+m=" ".join([a,b,c])
+print(m)
+
+a="s"
+b="a"
+c="m"
+d="y"
+f=" ".join([a,b,c,d])
+print(f)
+
+st="python"
+a,b,c,d,e,f=st
+print(a,
+      b,
+      c,
+      d,
+      e,
+      f)
+st="python"
+a,b,c,d,e,f=st
+print(a)
+print(b)
+print(c)
+print(d)
+print(e)
+print(f)
+
+st="python"
+for i in st:
+    print(i)
+
+st=("python ")
+a,b,c,d,e,f,g=st
+for i in (a,b,c,d,e,f,g):
+    print(i)
+
+
+
 
 #######LOOPING STATEMENTS######
 ##FOR LOOP
@@ -891,6 +962,47 @@ def a(**b):
     return c
 print(a(s=1,d=2,j=3,t=9))
 
+
+def numbers(*a):
+    print(f"sum is {sum(a)}")
+numbers(1,2,3,4,54)
+
+def numbers(a,b):
+    print(f"the sum is {a+b}")
+numbers(1,2)
+
+def multiplication(a,b):
+    print(f"the multiplication of the numbers is given by the sum is {a*b}")
+multiplication(2,3)
+
+def division(a,b):
+    print(f"the division is given by {a/b}")
+division(2,3)
+
+
+
+def names(a,b):
+    print(f"hello {a}")
+    print(f"hi {b}")
+names("samsrinivas","lahsrinivas")
+
+
+def data(name,age):
+    print(f"my name is{name} and my age is {age}")
+data("srinivas",20)
+
+def data(age,name="samyu"):
+    print(f"my name is{name} and the my name is{age}")
+data(20)
+
+def data(**a):
+    print(f"my name is{a}")
+data(name="samyu",age=20)
+
+
+def data(a):
+    print(f" my name is {a}")
+data(a="samyu")
 
 
 def a(b,c):
