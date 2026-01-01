@@ -1109,7 +1109,7 @@ num1=(int(input("enter the number")))
 ot=i(num,num1)
 print(f"{num},{u},{num1}")
 
-(2)
+(2)####
 num=int(input("enter the number"))
 for i in dict_operations.keys():
     print(i)
@@ -1118,6 +1118,1637 @@ d=dict_operations[t]
 num1=int(input("enter the number"))
 r=d(num,num1)
 print(f"{num},{d},{num1}")
+
+
+
+class car:
+    wheels=4
+    seats=4
+    gare=1
+car1=car()
+car2=car()
+car3=car
+car1.wheels=9
+print(car1.wheels)
+print(type(car1))
+print(type(car))
+
+
+class car:
+    wheels=4
+    seats=9
+car1=car()
+car2=car()
+print(car1.wheels)
+print(car2.seats)
+car1.wheels=45
+print(car1.wheels)
+
+
+class car:
+    wheels=10
+    seats=10
+car1=car()
+car2=car()
+car1.wheels=20
+car2.seats=90
+print(car1)
+print(car2)
+print(car1.seats)
+print(car2.seats)
+print(car1.wheels)
+
+#####OOPS##########(OOPS IN PYTHON
+####!.
+class bus:
+    pass
+bus1=bus()
+print(bus1)
+print(type(bus1))
+
+####
+class school:
+    def __init__(self,name,address,roll):
+        print("yes its sucessfully working")
+        self.sdname=name
+        self.door=address
+        self.work=roll
+school1=school("samyukthasrinivas","India","student")
+print(school1)
+print(school1.sdname)
+school2=school("laharisrinivas","India","student")
+print(school2)
+print(school2.sdname,school2.door)
+school1.sdname="sunithasrinivas"
+print(school1.sdname)
+
+######
+class car:
+    wheels=4
+    brek=1
+    gare=3
+c1=car()
+c2=car()
+print(c1)
+print(c1.wheels)
+print(c2.brek)
+
+######
+class long_bus:
+    wheels=9
+    def __init__(self,name,year_of_manufacture):
+        self.names_of_buses=name
+        print("it will exicte when the object is been created only")
+a=long_bus("sky",2025)
+a.wheels=10
+a.names_of_buses="samyusrinivas"
+print(a.names_of_buses)
+print(a.wheels)
+
+######
+class car:
+    wheels=4
+    color="black"
+    def __init__(self,name):
+        self.names=name
+        print("ok successful")
+    def __init__(self,seatbelt):
+        self.seat_belt=seatbelt
+b=car(5)
+c=car(7)
+print(b.seat_belt)
+print(c.seat_belt)
+
+
+####the second constructor is been overwritting on first constructor
+class bus():
+    wheels=9
+    seats=50
+    color="black"
+    def __init__(self,place,laguageplace):
+        self.plaes=place
+        self.laguageplace=laguageplace
+    def __init__(self,ladders,lights):
+        self.ladders=ladders
+        self.lights=lights
+c1=bus(2,5)
+print(c1.ladders)
+print(c1.lights)
+print(type(c1))
+print(c1)
+
+
+###overridding
+class car:
+    wheels=9
+    color="black"
+    lights=5
+    trunk=2
+c1=car()
+c1.color="deep blue"
+c1.lights=6
+print(c1.lights)
+print(c1.trunk)
+print(c1.color)
+
+######
+class student:
+    studentname="samyu"
+    classs="ece"
+    section="b"
+std1=student()
+print(std1.studentname)
+print(std1.classs)
+print(std1)
+print(type(student))
+print(student)
+print(type(std1))
+
+######
+class car():
+    wheel=9
+    color="blue"
+    def __init__(self,name_of_car,cost_of_car,song_systems):
+        self.names=name_of_car
+        self.costs=cost_of_car
+        self.songs=song_systems
+        print("ok the object is been created so its printing")
+ca1=car("oaddy",600000,3)
+print(ca1)
+print(ca1.songs)
+ca2=car("benzzz",8000000,6)
+print(ca2.names)
+ca2.names="benzzzzzzzzz"
+print(ca2.names)
+
+######
+import math
+class circle():
+    def __init__(self,radius):
+        self.radius=radius
+    def area(self):
+        return math.pi*self.radius**2
+    def cirucumference(self):
+        return 2*math.pi*self.radius
+circles=circle(5)
+print(f"the area of the circle is:{round(circles.area())}")
+print(f"the circumference of the is {round(circles.cirucumference())}")
+
+######
+import math
+class circle():
+    def __init__(self,radius):
+        self.radius=radius
+    def get(self):
+        return math.pi*self.radius**2
+    def circumference(self):
+        return 2*math.pi*self.radius
+anse=circle(8)
+a=print(f"the area of the circle is:{anse.get}")
+b=print(f"the circumference is:{anse.circumference()}")
+
+######STRINGS
+
+s1="python narayana"
+#s1="python narayana 1234"
+s2="2343654768798"
+s3="#$$%%^^^&&!@()*&^^"
+s4="dytryr34657@$$%^&*&^%~!@@"
+s5="/n,/t,/b,/r"
+print(s1.upper())
+print(s1.lower())
+print(s1.title())
+print(s1.capitalize())
+print(s1.islower())
+print(len(s1))
+print(s1.isupper())
+
+class car():
+    pass
+car_1=car()
+car_2=car()
+print(car_1)
+print(car_2)
+print(type(car_1))
+print(type(car_2))
+
+class car():
+    wheel=4
+    seats=5
+    seatbelts=5
+car_1=car()
+print(car_1.wheel)
+car_1.seats=10
+print(car_1.seats)
+car_seatbelts=10
+print(car_1.seatbelts)
+
+class student():
+    def __init__(self,name,study,branch,year):
+        self.name_of_student=name
+        self.study=study
+        self.branch=branch
+        self.year=year
+        print(f"the student name is{self.name_of_student},and studying{self.study},and the branch of the student is {branch},and yaer of the study is been{year}")
+student_1=student("samyukthasrinivas","M.tech","ECE(EMBADED)",3)
+print(student_1.name_of_student)
+student_2=student("laharisrinivas","M.tech","ECE",1)
+print(student_2)
+
+class car():
+    pass
+car_1=car()
+car_2=car()
+print(car_1)
+print(car_2)
+
+class car():
+    def __init__(self,name,cost):
+        self.names=name
+        self.cost_of_car=cost
+        self.colour="black"
+car_1=car("BENZ",300000)
+print(car_1.colour)
+print(car_1.names)
+print(type(car_1))
+print(id(car_1))
+print(car_1)
+
+
+class nmaes():
+    def __init__(self,name_1,age):
+        self.name=name_1
+        self.age=age
+        print("ok method is sucessfully completed")
+names=nmaes(89,"sam")
+print(names.name)
+
+
+class student():
+    total_followers=0
+    def __init__(self,name,study):
+        self.names=name
+        self.sty=study
+        print("all the above is sucessfully completed")
+student_1=student("sam",15)
+print(student_1.names)
+
+
+class student():
+    total_followers=0
+    def __init__(self,name):
+        self.names=name
+        print("the object is created")
+    def namesss(self):
+        print(self.names)
+student__1=student("sam")
+print(student__1.names)
+
+class ClassName():
+    followers=10
+    def __init__(self,name,course):
+        self.names=name
+        self.courses=course
+        print(f"the names of the student is{name},and his cource is{course}")
+    def display(self):
+        print(f"the name of the student is{self.names}")
+        print("the second method is been sucessfully verified")
+    def coures(self):
+        self.followers+=1
+s1=ClassName("samyukthasrinivas","python")
+print(s1.names)
+print(s1.courses)
+s2=ClassName("laharisrinivas","c")
+print(s2.names)
+print(s2.courses)
+s1.display()
+s2.display()
+s1.coures()
+s1.followers=1000
+print(s1.followers)
+print(s2.followers)
+print(s1.coures())
+
+class car():
+    wheels=10
+    seats=70
+    seatbults=70
+    def __init__(self,wheels,course):
+        self.wheels=wheels
+        self.course=course
+        print("ok")
+car1=car("BMW","PYTHON")
+print(car1.wheels)
+print(car1.wheels)
+
+class Instructor:
+    follower=0
+    def __init__(self,name,address):
+        self.name=name
+        self.addres=address
+        print("ok")
+    def display(self):
+        pass
+s1=Instructor("sam","royalpeta")
+print(s1.name)
+print(s1.addres)
+print(s1.display())
+
+
+class Instructor():
+    followers=0
+    def __init__(self,name,course):
+        self.names=name
+        self.course=course
+    def display(self,name_of_the_hometown):
+        print(f"the name is{self.names},and my hometown is {name_of_the_hometown}")
+    def updatr_followers(self):
+        self.followers+=1
+s1=Instructor("sam","python")
+print(s1.names)
+print(s1.course)
+s1.display("royalpeta")
+print(s1.display("royalpeta"))
+
+
+import math
+class circle():
+    def __init__(self,radius):
+        self.radius_of_circle=radius
+    def area(self):
+        return math.pi*self.radius_of_circle**2
+    def circumference(self):
+        return 2*math.pi*self.radius_of_circle
+c1=circle(10)
+print(f"the area of the circle is as the {c1.area}")
+
+######INHERITANCE####
+class human():
+    nose=1
+    mouth=1
+    eyes=2
+    ears=2
+    def __init__(self,name,address):
+        print("i will work hard")
+    def eat(self):
+        print("i will eat food very good")
+    def move(self):
+        print("i will move to work for another place")
+class male(human):
+    def __init__(self,names):
+        self.name=names
+    def eat(self):
+        super().eat()
+        print("at some times i will eat more and at night i will eat less food to avoid sleep")
+male_1=male("s")
+print(male_1.nose)
+male_1.eat()
+print(male_1.mouth)
+
+class father():
+    nose=1
+    mouth=1
+    ears=2
+    colour="white"
+    moules=2
+class son(father):
+    def properties(self):
+       colour="red"
+son1=son()
+print(son1.nose)
+print(son1.colour)
+son1.properties()
+print(son1.colour)
+
+
+class father:
+    nose=1
+    def __init__(self,name,address):
+        self.names=name
+        self.address=address
+        print(f"my name is {name}")
+    def work(self):
+        print("i will work")
+    def eat(self):
+        print("i will eat")
+class son(father):
+    def properties(self):
+        print("i have a bike")
+    def work(self):
+        super().work()
+        print("i am hardware engineer")
+o1=son("sri","royal")
+print(o1.nose)
+print(o1.eat)
+o1.work()
+o1.eat()
+
+
+class human:
+    eyes=2
+    ears=2
+    def __init__(self):
+        self.nose=1
+        self.mouth=1
+    def work(self):
+        print("the nose can sense the smell and mouth sense the taste")
+    def eat(self):
+        print("with help of the mouth we can eat food")
+class female(human):
+    def work(self):
+        super().work()
+        print("ok0")
+female_1=female()
+print(female.eyes)
+female_1.work()
+print(female_1.nose)
+
+
+
+class human:
+    eyes=2
+    def __init__(self):
+        self.angry="more"
+        self.flirting="more and more"
+        print(f"the angry of the human is {self.angry}")
+    def work(self):
+        print("i will work")
+class male(human):
+    def __init__(self):
+        super().__init__()
+        self.onetype="malee"
+        self.another="feemale"
+    def work(self):
+        super().work()
+        print("i will will work more smarter and harder")
+male_1=male()
+male_1.work()
+print(male_1.angry)
+print(male_1.another)
+
+
+class human:
+    eyes=1
+    def __init__(self,num_heart):
+        self.nose=1
+        self.mouth=1
+        self.num_heart=num_heart
+    def work(self):
+        print("i will work smart")
+    def eat(self):
+        print(f"i can eat by using {self.mouth} mouth")
+class female(human):
+    def __init__(self,name,heart):
+        super().__init__(heart)
+        self.name=name
+    def work(self):
+        print("i will work more hard and god will always give me good blessings ")
+female_1=female("payal",1)
+print(female_1.name)
+print(female_1.eyes)
+print(female_1.nose)
+female_1.work()
+print(female_1.num_heart)
+
+
+class human:
+    eyes=2
+    def __init__(self,names,address):
+        self.names=names
+        self.address=address
+        self.mouth=1
+        self.teeth=32
+    def display(self):
+        print("it will display")
+    def eat(self):
+        print("i can eat with my {self.mouth} mouth")
+class female(human):
+    def __init__(self,lastname,names,address):
+        super().__init__(names,address)
+        self.lastname=lastname
+        print(f"the{lastname} is the last name of the samyuktha")
+female_1=female("penumueri","samyukthasrinivas","royalpeta")
+print(female_1.eyes)
+print(female_1.names)
+print(female_1.address)
+
+
+
+
+class human:
+    nose=1
+    def __init__(self,name):
+        self.mouth=1
+        self.names=name
+        print(f"the sam is hacin only {self.mouth} and the name is {name}")
+    def eat(self):
+        print("okokok")
+    def work(self):
+        print("pooo")
+class female(human):
+    def __init__(self,names,address):
+        super().__init__(names)
+        self.address=address
+    def display(self):
+        print("it will display {self.address}")
+female_1=female("samyukthasrinivas","royalpeta")
+print(female_1.names)
+print(female_1.address)
+print(female_1.mouth)
+print(female_1.nose)
+
+
+###########multiple inheritance
+class father:
+    nose=1
+    def __init__(self,surname):
+        self.surname=surname
+        self.colour="white"
+        print("it is been from the fatherclass")
+    def work(self):
+        print("always working hard for my children")
+class mother:
+    eyes=2
+    def __init__(self,hair):
+        self.hair=hair
+        self.height=5.3
+        print("it is all about the motherclass")
+    def work(self):
+        print("i will always cook best food for my children and take care of family")
+class child(father,mother):
+    fingers=6
+    def __init__(self,name,surname,hair):
+        father.__init__(self,surname)
+        mother.__init__(self,hair)
+        self.name=name
+        self.weight=40
+        print("it is from the child class when the object is been created then the method is exicuted")
+    def work(self):
+        print("i am an hardware engineering student")
+child_1=child("samsrinivas","penumuri","black")
+child_1.work()
+mother.work(child_1)
+father.work(child_1)
+print(child_1.surname)
+print(child_1.hair)
+print(child_1.weight)
+print(child_1.name)
+mother.work(child_1)
+
+###########only the class varaiables inheritd from parents to the child
+
+
+class rama:
+    eyes=2
+    colour="blue"
+    print("it is an ramasclass")
+class sita:
+    nose=1
+    hair="curle"
+    print("it is an sitasclass")
+class kusha(rama,sita):
+    print("it is an kusha class and all the properties are been inherted from the mom and dad")
+kusha_1=kusha()
+print(kusha_1.eyes)
+print(kusha_1.hair)
+print(kusha_1.nose)
+print(kusha_1.colour)
+kusha_2=kusha()
+
+
+###just an attributes or variables in by using the single inheritance
+class rama:
+    colour="blue"
+    height=5.4
+    print(f"rama is in {colour} and height of rama is {height}")
+class lava(rama):
+    weight=40
+    print("if is all qualities inherits from the rama whose id lava's father")
+lava_1=lava()
+print(lava_1.colour)
+print(lava_1.height)
+print(lava_1.weight)
+
+
+####single inheritance by using the init constructor by using the super keyword
+class rama:
+    colour="blue"
+    def __init__(self,height,weight):
+        self.height=height
+        self.weight=weight
+        self.eye_ball="brown"
+        print("it will be exicuted when only the object is been created")
+class lava(rama):
+    fingers=6
+    def __init__(self,surname,heights,weights):
+        super().__init__(heights,weights)
+        self.surname=surname
+        self.skintone="blueishblack"
+lava_1=lava("kosala",5.6,54)
+print(lava_1.colour)
+print(lava_1.fingers)
+print(lava_1.height)
+print(lava_1.weight)
+print(lava_1.skintone)
+
+
+####it is an code single inheritance using the init constructor with two methos by using the supwe keyword
+class rama:
+    colour="blue"
+    def __init__(self,surname,properties):
+        self.surname=surname
+        self.properties=properties
+        self.bike=2
+    def work(self):
+        print("i will rule the kingdom of kosala")
+class lava(rama):
+    fingers=6
+    def __init__(self,car,surname,properties):
+        self.car=car
+        super().__init__(surname,properties)
+    def work(self):
+        super().work()
+        print("i will will help the people in my kingdom")
+lava_1=lava("BMW","kosala",1000000)
+print(lava_1.car)
+print(lava_1.surname)
+print(lava_1.colour)
+print(lava_1.properties)
+lava_1.work()
+
+
+###it is an code single inheritance using the init constructor with two methos by using the supwe keyword by using attributes in second metthod also and inheritting them in child class
+class rama:
+    colour="blue"
+    def __init__(self,surname,properties):
+        self.surname=surname
+        self.properties=properties
+        self.bike=2
+    def work(self):
+        self.towns=200
+        print("i will rule the kingdom of kosala")
+class lava(rama):
+    fingers=6
+    def __init__(self,car,surname,properties):
+        self.car=car
+        super().__init__(surname,properties)
+    def work(self):
+        self.villages_ruling=10000
+        super().work()
+        print("i will will help the people in my kingdom")
+lava_1=lava("BMW","kosala",1000000)
+print(lava_1.car)
+print(lava_1.surname)
+print(lava_1.colour)
+print(lava_1.properties)
+lava_1.work()
+print(lava_1.villages_ruling)
+print(lava_1.towns)
+
+
+
+############MULTIPLE INHERITANCE#########
+class rama:
+    colour="blue"
+    height=5.7
+    def __init__(self,surname):
+        self.surname=surname
+        self.properties=100000
+        print("the object is been created so that the init constructor is been exicuted")
+class sita:
+    weight=54
+    def __init__(self,eye_ball):
+        self.eye_ball=eye_ball
+        self.looks="beautiful"
+        print(f"sita is having all the properties from rama are given as {self.surname},{self.properties}")
+class lava(rama,sita):
+    def __init__(self,horoscope,surname,eye_ball):
+        rama.__init__(self,surname)
+        sita.__init__(self,eye_ball)
+        self.horoscope=horoscope
+        self.study="ramayana"
+lava_1=lava("all","kosala","black")
+print(lava_1.eye_ball)
+print(lava_1.eye_ball)
+
+######multiple methods in the multiple inheritance
+class Rama:
+    colour="blue"
+    height=5.7
+    def __init__(self,surname):
+        self.surname=surname
+        self.properties=100000
+        print("the object is been created so that the init constructor is been exicuted")
+    def work(self):
+        print("i will rule the kingdom of765856 kosala")
+class Sita:
+    weight=54
+    def __init__(self,eye_ball):
+        self.eye_ball=eye_ball
+        self.looks="beautiful"
+        print(f"sita is having all the properties from rama are given as {self.surname},{self.properties}")
+    def work(self):
+        self.houses=4
+        print("i worked hard for the house building")
+class Lava(Rama,Sita):
+    def __init__(self,horoscope,surname,eye_ball):
+        Rama.__init__(self,surname)
+        Sita.__init__(self,eye_ball)
+        self.horoscope=horoscope
+        self.study="ramayana"
+    def work(self):
+        print("i will rule the kingdom of kosala")
+lava_1=Lava("all","kosala","black")
+print(lava_1.eye_ball)
+print(lava_1.eye_ball)
+lava_1.work()
+Rama.work(lava_1)
+Sita.work(lava_1)
+
+
+###########multilevel inheritance#############
+class Sam:
+    colour="blue"
+    def work(self):
+        print("i will work by getting starting salary of  my carier at first company in college campusselection   the 80000 per month in hard ware")
+class Lahari(Sam):
+    def eat(self):
+        print("i will work by getting starting salary of the 100000 per month in hard ware")
+class Rama(Lahari):
+    def eat(self):
+        super().eat()
+        super().work()
+        print("i will work by getting starting salary of the 90000 per month in hard ware")
+rama_1=Rama()
+rama_1.eat()
+print(rama_1.colour)
+rama_1.eat()
+rama_1.work()
+
+
+##multiple inheritance by using only init method
+class Requirements:
+    def __init__(self,colour,frabics):
+        self.colour=colour
+        self.frabics=frabics
+        self.kundans="flowerkundans"
+class Design(Requirements):
+    def __init__(self,croptop,skirt):
+        self.croptop=croptop
+        self.skirt=skirt
+        print("design part is beeen conformed")
+class Implementation(Design):
+    def __init__(self,overalllook,colour,frabics,croptop,skirt):
+        Requirements.__init__(self,colour,frabics)
+        Design.__init__(self,croptop,skirt)
+        self.overalllook=overalllook
+        print("implementation is also successfully completed")
+imple_1=Implementation("excellent","blue","cotton","red","cream")
+print(imple_1.colour)
+print(imple_1.frabics)
+print(imple_1.overalllook)
+
+
+###doubt
+class Requirements(object):##object class (or) derived class (or)parent (or) super class
+    def __init__(self,colour,frabics):
+        self.colour=colour
+        self.frabics=frabics
+        self.kundans="flowerkundans"
+class Design(Requirements):#these are are what class
+    def __init__(self,croptop,skirt):
+        self.croptop=croptop
+        self.skirt=skirt
+        print("design part is beeen conformed")
+class Implementation(Design):
+    def __init__(self,overalllook,colour,frabics,croptop,skirt):
+        Requirements.__init__(self,colour,frabics)
+        Design.__init__(self,croptop,skirt)
+        self.overalllook=overalllook
+        print("implementation is also successfully completed")
+imple_1=Implementation("excellent","blue","cotton","red","cream")
+print(imple_1.colour)
+print(imple_1.frabics)
+print(imple_1.overalllook)
+
+
+#######hierarchical inheritance
+class human(object):
+    def eat(self):
+        print("i want to eat food")
+class female(human):
+    def work(self):
+        print("i want to work very hard and smart to earns more sri")
+class male(human):
+    def sleep(self):
+        print("i want to not sleep till the 1 at night because to work hard for my future carier")
+male_1=male()
+male_1.eat()
+male_1.sleep()
+female_1=female()
+female_1.eat()
+female_1.work()
+
+###
+class human(object):
+    def eat(self):
+        print("i want to eat food")
+    def work(self):
+        print("okoko")
+    def sleep(self):
+        print("okkkkkkkk")
+class female(human):
+    def work(self):
+        super().work()
+        print("i want to work very hard and smart to earns more sri")
+class male(human):
+    def sleep(self):
+        super().sleep()
+        print("i want to not sleep till the 1 at night because to work hard for my future carier")
+male_1=male()
+male_1.work()
+male_1.sleep()
+female_1=female()
+female_1.work()
+female_1.sleep()
+female_1.sleep()
+
+
+###
+class people(object):
+    people1="white"
+    people2="black"
+    def __init__(self,legs,hands):
+        self.legs=legs
+        self.hands=hands
+        print(f"the human is having an {legs} legs and {hands} hands")
+class teacher(people):
+    fingers=5
+    def __init__(self,eyes,legs,hands):
+        people.__init__(self,legs,hands)
+        self.eyes=eyes
+        self.nose=1
+        print("okkkkk")
+class student(people):
+    mouth=1
+    def __init__(self,legs,hands):
+        people.__init__(self,legs,hands)
+        print("i will learn and get a good job ")
+st=student(2,2)
+print(st.people1)
+print(st.legs)
+print(st.hands)
+te=teacher(2*3,4*4,6*1)
+print(te.people1)
+print(te.eyes)
+print(te.legs)
+
+
+
+#####HYBRID INHERITANCE###
+class A(object):
+    def eat(self):
+        print("i eat oranges everyday")
+    def work1(self):
+        print("i will go to gim 0000000for my workout")
+class B(A):
+    def work(self):
+        super().work1()
+        print("i will go to gim for my workout")
+class C:
+    def sleep(self):
+        print("i will sleep at 12o clock everyday")
+class D(B,C):
+    def play(self):
+        print("i will play games in our garden")
+d1=D()
+d1.play()
+d1.sleep()
+d1.work()
+d1.eat()
+
+####ENCAPSULATION####
+class dog:
+    legs=4
+    def __init__(self,speaks1):
+        self._speaks=speaks1#protected
+        print(f"the animal dog  always says {speaks1}")
+    def eats(self, food1):
+        self._food = food1
+        print(f"the cat always eats {food1}")
+class cat(dog):
+    def __init__(self,speaks2,speaks1):
+        dog.__init__(self,speaks1)
+        self.speaks=speaks2
+        self.hands=2
+        print(f"the cat always says {speaks2}")
+    def eats(self,food2,food1):
+        super().eats(food1)
+        self.food=food2
+        print(f"the cat always eats {food2}")
+class monkey(dog):
+    def __init__(self,speak3,speaks1):
+        dog.__init__(self,speaks1)
+        self.speakss=speak3
+        self.hands=2
+        print(f"the cat always says {speak3}")
+    def eatsss(self,food3):
+        self.food=food3
+        print(f"the cat always eats {food3}")
+c1=monkey("mwowwww","kkkkkk")
+c1.eatsss("veg briyani")
+c=cat("meow","bowbow")
+c.eats("meat","milk")
+
+
+
+class dog:
+    legs=4
+    def __init__(self,speaks1):
+        self.__speaks=speaks1#protected
+        print(f"the animal dog  always says {speaks1}")
+    def eats(self, food1):
+        self.__food = food1
+        print(f"the cat always eats {food1}")
+class cat(dog):
+    def __init__(self,speaks2,speaks1):
+        dog.__init__(self,speaks1)
+        self.speaks=speaks2
+        self.hands=2
+        print(f"the cat always says {speaks2}")
+    def eats(self,food2,food1):
+        super().eats(food1)
+        self.food=food2
+        print(f"the cat always eats {food2}")
+class monkey(dog):
+    def __init__(self,speak3,speaks1):
+        dog.__init__(self,speaks1)
+        self.speakss=speak3
+        self.hands=2
+        print(f"the cat always says {speak3}")
+    def eatsss(self,food3):
+        self.food=food3
+        print(f"the cat always eats {food3}")
+c1=monkey("mwowwww","kkkkkk")
+c1.eatsss("veg briyani")
+c=cat("meow","bowbow")
+c.eats("meat","milk")
+
+
+
+class bankaccount:
+    name_of_account="samyuktha"
+    def __init__(self,balance):
+        self._balance=balance
+        print(f"the present balance of the samyuktha is {self._balance}")
+    def deposite(self,amount):
+        self._balance+=amount
+        self.bonus=10000
+    def withdrawal(self,amounttt):
+        self._balance-=amounttt
+        print(f"the total present balance of the account holder samyuktha is {self._balance}")
+class lahari(bankaccount):
+    def __init__(self,balance_of_lahari,balance):
+        super().__init__(balance)
+        self.balance_of_lahari=balance_of_lahari
+        print(f"the balance of the lahari is {self.balance_of_lahari}")
+    def deposit(self):
+        print(f"the balance of the lahari is {self.balance_of_lahari}")
+a=bankaccount(700000)
+a.deposite(100000)
+print(a._balance)
+y=lahari(300000,2000000)
+print(y._balance)
+
+
+
+class student:
+    cla="19"
+    def __init__(self,age):
+        self._age=age
+        self._name="samyukthasrinivas"
+        print("all the students are beenn scored very good marks")
+class student1(student):
+    def __init__(self,number,age):
+        super().__init__(age)
+        self.number=number
+        self.rollnumber="23781A04D8"
+        print("jhbsfskdugjigr")
+    def hometown(self,address):
+        self._address=address
+        print("the all students address are been kept very secure")
+class student2(student):
+    def __init__(self,number1,age):
+        super().__init__(age)
+        self.number1=number1
+        self.rollnumber1="22223781A04D8"
+        print("jhbsfskdugjdfhgykjyukyigr")
+    def hometown(self,address1):
+        self._address=address1
+        print("the all stdsgfhgjhbklyututyudents address are been kept very secure")
+c=student1(45768679456,20)
+print(c._name)
+print(c._age)
+r=student2(2143546546,19)
+print(r._age)
+print(r._name)
+print(r.cla)
+
+
+
+class bankaccount:
+    gold="1kg"
+    def __init__(self,balance):
+        self.__balance=balance
+        self.accountnum=32546587987098
+        print("this is my account")
+    def deposite(self,amount):
+        self.__balance+=amount
+        print(f"the total balace is {self.__balance}")
+class accountholder(bankaccount):
+    def __init__(self,name,__balance):
+        super().__init__(__balance)
+        self.name=name
+        print("ewtrgfdth")
+c=accountholder("samyuktha",2343540)
+print(c.gold)
+#print(c.__balance)
+
+class dog:
+    def __init__(self,speak):
+        self.speak=speak
+        self.colour="whiteblue"
+        self.weight="5kg"
+        print("kuhfkedrkgioer")
+class cat(dog):
+    def chart(self,speaks):
+        self.speaks=speaks
+        self.colour="blue"
+        print("ok")
+d=cat("meow")
+print(d.speak)
+print(d.colour)
+print(d.weight)
+
+class sam:
+    def __init__(self,gold,car):
+        self._gold=gold
+        self._car=car
+        self._home=1
+        print("all the properties of sam can be used by the its own sub classes only")
+    def property(self):
+        self.money=100000
+        print("these all money can be also used by her parents and sister")
+class parentslah(sam):
+    def eatss(self,food):
+        self.food=food
+        print(f"the food is as {self.food}")
+p=parentslah("1kg","blueblack")
+print(p._gold)
+p.property()
+print(p._home)
+
+####private
+class person:
+    def personal_data(self,photos,phonenum,nickname):
+        self.__phots=photos
+        self.__phonenum=phonenum
+        self.__nickname=nickname
+        self.hometown="royalpeta"
+        print("the photos are been very private forevery person and also phone number,etc")
+u=person()
+u.personal_data("all pics are been private",4567689789,"pandu")
+u.personal_data
+
+
+##class rama:
+    kingdom="kosala"
+    def __init__(self,surname,land):
+        self.surname=surname
+        self.land=land
+        print(f"the kingdom is {self.kingdom}")
+    def work(self):
+        self.worrier=10000
+        self.ugkih="5477"
+        print("okok")
+o=rama("kosalarama",1000)
+print(o.surname)
+print(o.kingdom)
+o.work()
+print(o.land)
+print(o.worrier)
+print(o.worrier)
+print(o.ugkih)
+
+class rama:
+    father="dasaradha"
+    def __init__(self,surname,age):
+        self.surname=surname
+        self.age=age
+        print(f"the surname of the rama is {self.surname} and  his father is {self.father}")
+    def work(self,town):
+        self.town=town
+        print(f"the town of the rama is {self.town}")
+class sita(rama):
+    def __init__(self,veg,age,land):
+        super().__init__(surname,age)
+
+class rama:
+    father="dasharadha maharaja"
+    mother="kouslya"
+    def __init__(self,surname,kingdom):
+        self.surname=surname
+        self.kingdom=kingdom
+        self.daughters=0
+        print("ok this print statement is been exicuted only when there is a calling of the object")
+        print(f"rama's father name is {self.father},and mother name is {self.mother}")
+        print(f"rama is having {self.daughters},and his kingdom is {self.kingdom}")
+    def work(self,ruling):
+        self.rulin=ruling
+        self.land=1000
+        print("this is the work is called so this one is printed")
+        print(f"rama is having an kingdom is {self.kingdom},and his land is {self.land}")
+    def eat(self,plantfood):
+        self.plantfood=plantfood
+        self.fruits="apple,oranges,bananas"
+class lavakusha(rama):
+    colour="white"
+    def __init__(self,agrland,homes,surname,kingdom):
+        super().__init__(surname,kingdom)
+        self.agrland=agrland
+        self.homes=homes
+        print(f"this is been printed only {self.agrland} when the lavakusha class object is been created")
+    def eat(self,junkfood,plantfood):
+        super().eat(plantfood)
+        self.junkfood=junkfood
+        self.juices=2
+        print("okokokoko")
+l=lavakusha(20,30,"raghuvamsham","kosala")
+print(l.agrland)
+print(l.homes)
+print(l.colour)
+l.eat("biscuits","leafyvegitables")
+print(l.juices)
+l.agrland=245
+print(l.agrland)
+l.junkfood="pizza"
+print(l.junkfood)
+l.kingdom="kkkkkkkkkkkkk"
+print(l.kingdom)
+
+
+class human:
+    __addarcard=2354756879#mangaling
+    _dateofbirth=2005
+    name="haribabu"
+h=human()
+print(h.name)
+print(h._human__addarcard)
+print(h._dateofbirth)
+print(h._human__addarcard)
+print(h.name)
+print(h._dateofbirth)
+
+
+class human:
+    __property="10cr"
+    def ownedthings(self,money,gold):
+        self.__money=money
+        self.__gold=gold
+        self._car=2
+        print("okokok")
+    def account(self,accountnumber,accountbalance):
+        self.__accountnumber=accountnumber
+        self.__accountbalance=accountbalance
+        print("okoko")
+class female(human):
+    __age=20
+    __pro="kkk"
+    def work(self,ruling):
+        self.ruling=ruling
+        self.__land=1000
+d=female()
+print(d._human__property)#mangaling
+print(d.ownedthings)
+
+
+
+class numbers:
+    __a=10
+    def display(self):
+        print(self.__a)
+n=numbers()
+n.display()
+
+class numbers:
+    __a=10
+    def display(self):
+        print(self.__a)
+        print(self.__a+6)
+n=numbers()
+n.display()
+
+class num:
+    __s=90
+    _a=10
+    def display1(self,r):
+        self.__r=r
+        print(self.__s+r)
+c=num()
+c.display1(45)
+
+
+class numbers:
+    __a=10
+    _b=20
+    c=30
+    def display(self,d,e):
+        self.__d=d
+        self._e=e
+        self.f=40
+        print(self.__a+self._b+self.c)
+    def display1(self):
+        self.sumofall=self.__d+self._e+self.f
+        print(self.sumofall)
+ty=numbers()
+ty.display(50,60)
+ty.display1()
+
+
+
+
+class numbers:
+    __a=10
+    _b=20
+    c=30
+    def display(self,d,e):
+        self.__d=d
+        self._e=e
+        self.f=40
+        print(self.__a+self._b+self.c)
+    def display1(self):
+        self.sumofall=self.__d+self._e+self.f
+        print(self.sumofall)
+class num1(numbers):
+    __u=80
+    def display2(self,i,o):
+        self._i=i
+        print(self._e)
+ty=numbers()
+ty.display(50,60)
+ty.display1()
+
+class maths:
+    __a=10
+    __b=20
+    __c=30
+    def __display(self,d):
+        self.__d=d+self.__a
+    def display1(self):
+        return __display
+
+#####public access specifier
+class student:
+    a=10
+    b=70
+    c=90
+    def __init__(self,name,rollnumber,age):
+        self.name=name
+        self.rollnumber=rollnumber
+        self.age=age
+        print("ok")
+    def display(self):
+        print(self.age)
+        print(self.a+self.b+self.c)
+class branch(student):
+    pass
+    def publicmethod(self):
+        print(self.a)
+        print(self.rollnumber)
+s=student("sam",235467576,20)
+s.display()
+print(s.rollnumber)
+print(s.age)
+print(s.a+9)
+print(s.a)
+s1=branch("lahari",436576879,18)
+s1.publicmethod()
+print(s1.age)
+
+##protected access specifiers
+class student:
+    _a=10
+    _b=20
+    _c=30
+    def __init__(self,name,rollnumber,age):
+        self._name=name
+        self._rollnumber=rollnumber
+        self._age=age
+        print("ok")
+    def _display(self,surname):
+        print(self._age)
+        self._surname=surname
+    def _disss(self):
+        print(self._surname)
+class branch(student):
+    def anotherclass(self):
+        print(self._age)
+        print(self._a+self._b+self._c)
+s2=student("narayana",45465768798000000,"millions")
+s2._display("housename")
+
+####
+class student:
+    __a=200
+    __b=100
+    __c=300
+    def __init__(self,name,rollnumber,age):
+        self.__name=name
+        self.__rollnumber=rollnumber
+        self.__age=age
+        print("its an privatemethod of constructor")
+    def display(self):
+        print(self.__a + self.__b + self.__c)
+        print("jgk")
+    def __displayyy(self):
+        print(self.__age)
+        print(self.__rollnumber)
+w=student("v",123456,32)
+w.display()
+w._student__displayyy()
+
+
+
+
+
+##
+class student:
+    __a=200
+    __b=100
+    __c=300
+    def __init__(self,name,rollnumber,age):
+        self.__name=name
+        self.__rollnumber=rollnumber
+        self.__age=age
+        print("its an privatemethod of constructor")
+    def display(self):
+        print(self.__a + self.__b + self.__c)
+        print("jgk")
+    def __displayyy(self):
+        print(self.__age)
+        print(self.__rollnumber)
+class branch(student):
+    def anotherclasss(self):
+       pass
+w=student("v",123456,32)
+w.display()
+w._student__displayyy()
+e1=branch("hope",6789000,300)
+e1.display()
+print(e1._student__name)
+e1.anotherclasss()
+e1._student__displayyy()
+
+#####abstractmethod
+from abc import ABC,abstractmethod
+class student(ABC):
+    name="samyukthasrinivas"
+    age=20
+    @abstractmethod
+    def __init__(self,study,rollnumber):
+        self.study=study
+        self.roolnumber=rollnumber
+        print(f"{self.name} is studing {self.study} in SVCET college and her age is {self.age}")
+    def work(self):
+        self.working="haedware"
+        print(f"{self.name} is working in {self.working} company with salary of 100000 per month")
+class personalwork(student):
+    def __init__(self,buyingclothes,jewllery,study,rollnumber):
+        super().__init__(study,rollnumber)
+        self.buyingclothes=buyingclothes
+        self.jewllery=jewllery
+        print(f"{self.name} is earing more and more handfull of money this is the ouput of her hardwork only and blessing of her parents and god and goddess")
+    def parents(self,nameofmom,nameoffather):
+        self.nameofmom=nameofmom
+        self.nameoffather=nameoffather
+        print("okoko")
+#s=student(15,76587)#we cannot create an object if there is an @abstractmethod(ABC) so object is not created
+
+####encapsulation
+class student:
+    a=10
+    b=20
+    c=30
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+        print(f"the student name is {self.name} and her age is {self.age}")
+    def display(self):
+        self.study="B.Tech"
+        print("okokookokokkk")
+    def diss(self):
+        print("plplplp")
+class barnch(student):
+    def anotherclass(self,roomnumber,block):
+        self.roomnumber=roomnumber
+        self.block=block
+        print(f"the student {self.name} is in the room {self.roomnumber}")
+    def displayanother(self):
+        print("okoko")
+b=barnch(34543,"d")
+b.display()
+print(b.name)
+b.anotherclass("kjdfks",345)
+print(b.block)
+print(b.roomnumber)
+
+
+##protected
+class student:
+    _a=10
+    _b=20
+    _c=30
+    def __init__(self,name,rollnumber):
+        self._name=name
+        self._rollnumber=rollnumber
+        print("ok")
+    def _display(self,marks):
+        self.marks=marks
+        print("ioioioioi")
+    def display(self):
+        print("yesyes")
+        print(self._display)
+class branch(student):
+    def anothermethod(self):
+        print(self._rollnumber)
+        print(self.marks)
+b1=branch("srilakshminarayana",123456)
+print(b1._rollnumber)
+print(b1._name)
+
+
+
+##
+class student:
+    def __init__(self,name,age):
+        self.__name=name
+        self.__age=age
+        print("okokok")
+    def display(self):
+        print(self.__name)
+        print(self.__age)
+    def __dis(self):
+        print(self.__name)
+s=student("sam",20)
+s.display()
+##s.__dis()
+
+
+############POLYMORPHISM############
+###operator overloadingloadddddddiiiiinnnngggg
+class Complexnumber:
+    def __init__(self,r,i):
+        self.real=r
+        self.imginary=i
+    def __add__(self,other):
+        return (f"{self.real+other.real} + {self.imginary+other.imginary} i" )
+n1=Complexnumber(1,2)
+n2=Complexnumber(3,4)
+print(n1+n2)
+
+
+class Addition:
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+    def __add__(self,other):
+        a=self.a+other.a
+        b=self.b+other.b
+        return (f"{self.a+other.a} + {self.b+other.b}")
+    def __mul__(self,other):
+        a=self.a*other.a
+        b=self.b*other.b
+        return (f"{self.a*other.a} * {self.b*other.b}")
+    def __sub__(self,other):
+        a=self.a-other.a
+        b=self.b-other.b
+        return (f"{self.a-other.b} - {self.b-other.b}")
+N1=Addition(1,2)
+N2=Addition(3,4)
+print(N1+N2)
+print(N1*N2)
+print(N1-N2)
+###operator overloadingloadddddddiiiiinnnngggg
+class Numbers:
+    def __init__(self,a,b):
+        self.a=a
+        self.b=b
+    def __add__(self,other):
+        a=self.a+other.a
+        b=self.b+other.b
+        return (f"{self.a+other.a} + {self.b+other.b}")
+    def __sub__(self,other):
+        a=self.a-other.a
+        b=self.b-other.b
+        return (f"{self.a-other.a} - {self.b-other.b}")
+    def __mul__(self,other):
+        a=self.a*other.a
+        b=self.b*other.b
+        return (str(self.a*other.a) + str(self.b*other.b))
+    def __eq__(self,other):
+        a=self.a==other.a
+        b=self.b==other.b
+        return (f"{self.a==other.a} and {self.b==other.b}")
+    def __ge__(self,other):
+        a=self.a>=other.a
+        b=self.b>=other.b
+        return (str(self.a>=other.a) and str(self.b>=other.b))
+n1=Numbers(1,4)
+n2=Numbers(1,6)
+print(n1+n2)
+print(n1-n2)
+print(n1*n2)
+print(n1==n2)
+print(n1>=n2)
+
+###method overloaddiiinnnggg
+class Numbers:
+    def works(self,a,b):
+        print("its an 1 st method")
+        self.a=a
+        self.b=b
+    def works(self,a,b,c):
+        self.a=a
+        self.b=b
+        self.c=c
+        print(self.a+self.b+self.c)
+        print("okok")
+n1=Numbers()
+n1.works(1,2,0)
+
+class Numbers:
+    def works(self,*args):
+        total=0
+        for i in args:
+            total+=i
+        print(total)
+n1=Numbers()
+n1.works(1,2)
+n1.works(3,4,8)
+n1.works(1,2,3,4,5)
+
+####method overridding
+class Animals:
+    def speaks(self,s,d):
+        self.s=s
+        self.d=d
+        print("ok")
+class dog(Animals):
+    def speaks(self,s,d):
+        super().speaks(s,d)
+        print("popopop")
+
+n=dog()
+n.speaks(123,456)
+
+class Dundermethods:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def __len__(self ):
+        a=self.name
+        b=self.age
+        return len(a),len(b)
+c=Dundermethods("samyukthasrinivas","20")
+print(len(c))
+
+
+
+class Dundermethods:
+    def __init__(self,name,age):
+        self.name=name
+        self.age=age
+    def __str__(self):
+        a=self.name
+        return str(a)
+c=Dundermethods(3543654768979,20)
+print(str(c))
+print(type(c))
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
