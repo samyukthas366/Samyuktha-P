@@ -1,0 +1,246 @@
+####STACK IN PYTHON###
+class stack:
+    def __init__(self):
+        self.stack=[]
+        self.indexofstack=0
+    def isEmpty(self):
+        return self.stack==[]
+    def push(self,data):
+        self.stack.insert(self.indexofstack,data)
+        self.indexofstack+=1
+        return f"the {self.stack} element is been added"
+    def pop(self):
+        self.indexofstack-=1
+        return self.stack.pop(self.indexofstack)
+    def size11(self):
+        return len(self.stack)
+a=__name__=="__main__"
+s=stack()
+print(s.isEmpty())
+print(s.push(100))
+print(s.push(200))
+#print(s.pop())
+print(s.pop())
+print(s.size11())
+
+
+class stack123:
+    def __init__(self):
+        self.stack=[]
+        self.index=0
+    def push(self,data):
+        self.stack.insert(0,data)
+        self.index+=1
+        return f"the {self.stack} element is been added"
+    def pop(self):
+        self.index-=1
+        return self.stack.pop(self.index)
+    def size(self):
+        return len(self.stack)
+a=__name__=="__main__"
+s=stack()
+print(s.push(100))
+print(s.pop())
+
+class stack1(object):
+    def __init__(self):
+        self.stack=[]
+        self.indesnumber=0
+    def Empty(self):
+        return self.stack==[]
+    def isEmpty(self):
+        return self.stack==[]
+a=__name__=="main__"
+s=stack1()
+print(s.Empty())
+print(s.isEmpty())
+
+
+class stack2():
+    def __init__(self):
+        self.stack=[]
+        self.indexis=0
+    def push(self,data):
+        self.stack.append(data)
+        self.indexis+=1
+        return "{} is the number is pushed in tho the stack".format(data)
+s=__name__=="__main__"
+s2=stack2()
+print(s2.push(100))
+print(s2.push(900))
+
+####
+class st:
+    def __init__(self):
+        self.stack=[]
+        self.index=0
+    def isEmpty(self):
+        return self.stack==[]
+    def push(self,data):
+        self.stack.insert(self.index,data)
+        self.index+=1
+        return "{} is the stack ".format(data)
+    def pop(self):
+        self.index-=1
+        return self.stack.pop(self.index)
+    def size(self):
+        return len(self.stack)
+s=st()
+print(s.isEmpty())
+print(s.push(100))
+print(s.pop())
+print(s.size())
+
+
+class names:
+    def __init__(self):
+        self.str=[]
+        self.index=0
+    def push(self,data):
+        self.str.insert(self.index,data)
+        self.index+=1
+        return "{} is the pushed data".format(data)
+    def pop(self):
+        self.index-=1
+        return self.str.pop(self.index)
+    def size(self):
+        return len(self.str)
+if __name__=="__main__":
+  a=names()
+  print(a.push(100))
+  print(a.pop())
+  print(a.size())
+
+
+class stack:
+    def __init__(self):
+        self.str=[]
+        self.index=0
+    def isEmpty(self):
+        return self.str==[]
+    def push(self,data):
+        self.str.insert(self.index,data)
+        self.index+=1
+        return "{} is the appened or pushed element in the str".format(data)
+    def pop(self):
+        self.index-=1
+        return self.str.pop(self.index)
+    def top(self):
+        return self.str[self.index]
+    def size(self):
+        return len(self.str)
+if __name__=="__main__":
+    s=stack()
+    print(s.isEmpty())
+    print(s.push(100))
+    print(s.push(200))
+    print(s.push(300))
+    print(s.pop())
+    print(s.pop())
+    print(s.size())
+
+class stack:
+    def __init__(self):
+        self.str=[]
+        self.index=0
+    def push(self,data):
+        self.str.insert(self.index,data)
+        self.index+=1
+        return "{} is the push element".format(data)
+    def pop(self):
+        self.index-=1
+        self.str.pop(self.index)
+        return self.str.pop(self.index)
+    def size(self):
+        return len(self.str)
+if __name__=="__main__":
+    s=stack()
+    print(s.size())
+    print(s.push(100))
+    print(s.push(200))
+    print(s.push(400))
+    print(s.push(800))
+    print(s.size())
+
+
+class names:
+    def __init__(self):
+        self.stack=[]
+        self.indexing=0
+    def isEmpty(self):
+        return self.stack==[]
+    def push(self,data):
+        self.stack.insert(self.indexing,data)
+        self.indexing+=1
+        return "{} is the element in the stack".format(data)
+    def pop(self):
+        self.indexing-=1
+        return self.stack.pop(self.indexing)
+    def size(self):
+        return len(self.stack)
+if __name__=="__main__":
+    s=names()
+    print(s.push("sam"))
+    print(s.push("lahari"))
+    print(s.push("srinivas"))
+    print(s.push("sunitha"))
+    print(s.push("anasuya"))
+    print(s.pop())
+    print(s.pop())
+    print(s.size())
+    print(s.stack)
+
+
+class names:
+    def __init__(self):
+        self.stack=["sam","lah"]
+        self.indexing=0
+    def isEmpty(self):
+        return self.stack==[]
+    def push(self,data):
+        self.stack.append(data)
+        self.indexing+=1
+        return "{} is the data ".format(data)
+    def pop(self):
+        self.indexing-=0
+        return self.stack.pop(self.indexing)
+    def size(self):
+        return len(self.stack)
+s=names()
+print(s.size())
+print(s.push("jimin"))
+print(s.push("v"))
+print(s.push("suga"))
+print(s.stack)
+print(s.pop())
+print(s.pop())
+print(s.stack)
+print(s.size())
+
+class stack(object):
+    def __init__(self):
+        self.stack=[]
+        self.index=0
+    def push(self,data):
+        self.stack.insert(self.index,data)
+        self.index+=1
+        return "{} is the data added in stack".format(data)
+    def pop(self):
+        self.index-=1
+        return self.stack.pop(self.index)
+    def size(self):
+        return len(self.stack)
+if __name__=="__main__":
+    s=stack()
+    print(s.push(100))
+    print(s.push("sam"))
+    print(s.push("jimina"))
+    print(s.push("v"))
+    print(s.pop())
+    print(s.pop())
+    print(s.size())
+    print(s.stack)
+    print(s.size())
+
+
+
