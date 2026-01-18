@@ -760,6 +760,40 @@ s.dele_begin()
 s.dele_middle()
 s.dele_end()
 
+####position#####
+#################
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Sll(object):
+    def __init__(self):
+        self.head=None
+    def finding_position(self,key):
+        temp=self.head
+        position=0
+        Found=False
+        while(temp):
+            if(temp.data==key):
+                print(f"the value is {key} and its position is {position}")
+                Found=True
+            temp=temp.next
+            position+=1
+        if(not Found):
+           print("not found")
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+head.next.next.next=Node(40)
+head.next.next.next.next=Node(50)
+head.next.next.next.next.next=Node(60)
+head.next.next.next.next.next.next=Node(70)
+s=Sll()
+s.head=head
+s.finding_position(30)
+
+
+
 
 
 
