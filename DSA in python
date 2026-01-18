@@ -242,5 +242,525 @@ if __name__=="__main__":
     print(s.stack)
     print(s.size())
 
+#####queas
+class ques(object):
+    def __init__(self):
+        self.ques=[]
+    def enques(self,data):
+        self.ques.insert(0,data)
+        return "{} is the data in stack".format(data)
+    def deques(self):
+        self.ques.pop()
+    def size(self):
+        return len(self.ques)
+if __name__=="__main__":
+    s=ques()
+    print(s.enques(100))
+    print(s.enques(200))
+    print(s.enques("sam"))
+    print(s.enques("lahari"))
+    print(s.deques())
+    print(s.deques())
+    print(s.size())
+    print(s.ques)
+
+
+class quesss:
+     def __init__(self):
+        self.ques=[]
+        def enques(self,data):
+            self.ques.insert(0,data)
+            return "{} is the data".format(data)
+        def deques(self):
+            self.ques.pop()
+            return self.ques.pop()
+        def size(self):
+            return len(self.ques)
+if __name__=="__main__":
+    s=quesss()
+    #print(s.size())
+    #print(s.enques(100))
+    #print(s.deques())
+
+class ques:
+    def __init__(self):
+        self.ques=[]
+    def isEmpty(self):
+        return self.ques==[]
+    def enques(self,data):
+        self.ques.insert(0,data)
+        return "{} is the data in ques".format(data)
+    def deques(self):
+        self.deques.pop()
+        return self.ques.pop()
+    def size(self):
+        return len(self.ques)
+if __name__=="__main__":
+    q=ques()
+    print(q.size())
+    print(q.enques(100))
+    print(q.enques(200))
+    print(q.enques("sam"))
+    print(q.enques("lahari"))
+    print(q.deques())
+    print(q.deques())
+    print(q.size())
+
+#####linked list######
+###singlelinkedlist#####
+class Node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+head.next.next.next=Node(40)
+head.next.next.next.next=Node(60)
+temp=head
+while temp:
+    print(temp.data,"-->",end=" ")
+    temp=temp.next
+print("none")
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+head.next.next.next=Node(40)
+new_node=Node(300)
+temp=head
+new_node.next=head
+head=new_node
+temp=head
+while temp:
+    print(temp.data,"-->",end=" ")
+    temp=temp.next
+print("none")
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+head=Node(100)
+head.next=Node(200)
+head.next.next=Node(300)
+head.next.next.next=Node(400)
+head.next.next.next.next=Node(500)
+new_node=Node(1000)
+temp=head
+while temp.next:
+    temp=temp.next
+temp.next=new_node
+temp=head
+while temp:
+    print(temp.data,"-->",end=" ")
+    temp=temp.next
+print("none")
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+head.next.next.next=Node(40)
+new_node=Node(600)
+temp=head
+new_node.next=head.next
+head.next=new_node
+temp=head
+while temp:
+    print(temp.data,"-->",end=" ")
+    temp=temp.next
+print("none")
+
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+head.next.next.next=Node(40)
+new_node=Node(300)
+temp=head
+new_node.next=head
+head=new_node
+temp=head
+while temp:
+    print(temp.data,"-->",end=" ")
+    temp=temp.next
+print("none")
+
+
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+head.next.next.next=Node(40)
+new_node=Node(300)
+temp=head
+new_node.next=head.next
+head.next=new_node
+temp=head
+while temp:
+    print(temp.data,"-->",end=" ")
+    temp=temp.next
+print("none")
+
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+head.next.next.next=Node(40)
+new_node=Node(300)
+temp=head
+new_node.next=head.next
+head.next=new_node
+temp=head
+while temp:
+    print(temp.data,"-->",end=" ")
+    temp=temp.next
+print("none")
+
+
+
+
+
+class Node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+new_node=Node(100)
+temp=head
+new_node.next=head
+head=new_node
+temp=head
+while temp:
+    print(temp.data,"-->",end=" ")
+    temp=temp.next
+print("none")
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+head.next.next.next=Node(40)
+new_node=Node(100)
+temp=head
+new_node.next=head.next
+head.next=new_node
+temp=head
+while temp:
+    print(temp.data,"-->",end=" ")
+    temp=temp.next
+print("none")
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+head=Node(1000)
+head.next=Node(2000)
+head.next.next=Node(3000)
+head.next.next.next=Node(4000)
+new_node=Node(100)
+temp=head
+new_node.next=head.next.next
+head.next.next=new_node
+temp=head
+while temp:
+    print(temp.data,"-->",end=" ")
+    temp=temp.next
+print("none")
+
+class Node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+head.next.next.next=Node(40)
+head.next.next.next.next=Node(50)
+new_node=Node(1000)
+temp=head
+new_node.next=head.next.next.next
+head.next.next.next=new_node
+temp=head
+while temp:
+    print(temp.data,"-->",end=" ")
+    temp=temp.next
+print("none")
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+head.next.next.next=Node(40)
+temp=head
+head=head.next
+temp=head
+while temp:
+    print(temp.data,"-->",end=" ")
+    temp=temp.next
+print("none")
+
+class Node:
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+temp=head
+head=head.next.next
+temp=head
+while temp:
+    print(temp.data,"-->",end=" ")
+    temp=temp.next
+print("none")
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+head.next.next.next=Node(40)
+temp=head
+head.next=head.next.next.next
+temp=head
+while temp:
+    print(temp.data,"-->",end=" ")
+    temp=temp.next
+print("none")
+print(head.data)
+print(head)
+print(head.next.data)
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+head.next.next.next=Node(40)
+temp=head
+while temp:
+    print(temp.data,"-->",end=" ")
+    temp=temp.next
+print("None")
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+head=Node(100)
+head.next=Node(200)
+head.next.next=Node(300)
+head.next.next.next=Node(400)
+new_node=Node(2000)
+temp=head
+new_node.next=head
+head=new_node
+temp=head
+while temp:
+    print(temp.data,"-->",end=" ")
+    temp=temp.next
+print("None")
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+head=Node(1)
+head.next=Node(2)
+head.next.next=Node(3)
+head.next.next.next=Node(4)
+new_node=Node(5)
+temp=head
+new_node.next=head.next.next
+head.next.next=new_node
+temp=head
+while temp:
+    print(temp.data,"__>",end=" ")
+    temp=temp.next
+print("none")
+
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+new_node=Node(100)
+temp=head
+while temp.next:
+    temp=temp.next
+temp.next=new_node
+temp=head
+while temp:
+    print(temp.data,"__>",end=" ")
+    temp=temp.next
+print("None")
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+head.next.next.next=Node(40)
+head.next.next.next.next=Node(50)
+head.next.next.next.next.next=Node(60)
+temp=head
+key=30
+position=0
+Found=False
+temp=head
+while temp:
+    if(temp.data==key):
+        print(f"the key is {key} and its position is {position}")
+        Found=True
+    temp=temp.next
+    position+=1
+
+
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Sll(object):
+    def __init__(self):
+        self.head=None
+    def inst_begin(self,data):
+        new_node=Node(data)
+        temp=self.head
+        new_node.next=self.head
+        self.head=new_node
+        temp=self.head
+        while temp:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+        print("None")
+    def inst_middle(self,data):
+        new_node=Node(data)
+        temp=self.head
+        new_node.next=self.head.next.next
+        self.head.next.next=new_node
+        temp=self.head
+        while temp:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+        print("None")
+    def inst_end(self,data):
+        new_node=Node(data)
+        temp=self.head
+        while temp.next:
+            temp=temp.next
+        temp.next=new_node
+        temp=self.head
+        while temp:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+        print("None")
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+head.next.next.next=Node(40)
+head.next.next.next.next=Node(50)
+head.next.next.next.next.next=Node(60)
+head.next.next.next.next.next.next=Node(70)
+s=Sll()
+s.head=head
+s.inst_begin(1234)
+s.inst_middle(123456)
+s.inst_end(90786)
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class LinkedList(object):
+    def __init__(self):
+        self.head=None
+    def dele_begin(self):
+        temp=self.head
+        self.head=self.head.next
+        temp=self.head
+        while temp:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+        print("None")
+    def dele_middle(self):
+        temp=self.head
+        self.head.next=self.head.next.next
+        temp=self.head
+        while temp:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+        print("None")
+    def dele_end(self):
+        if(self.head is None):
+            return
+        if(self.head.next is None):
+            self.head=None
+            return
+        temp=self.head
+        while(temp.next.next):
+            temp=temp.next
+        temp.next=None
+        temp=self.head
+        while temp:
+           print(temp.data, "__>", end=" ")
+           temp = temp.next
+        print("None")
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+head.next.next.next=Node(40)
+head.next.next.next.next=Node(50)
+head.next.next.next.next.next=Node(60)
+head.next.next.next.next.next.next=Node(70)
+head.next.next.next.next.next.next.next=Node(80)
+head.next.next.next.next.next.next.next.next=Node(90)
+s=LinkedList()
+s.head=head
+s.dele_begin()
+s.dele_middle()
+s.dele_end()
+
+
+
 
 
