@@ -854,6 +854,119 @@ head.next.next.next.next.next.next=Node(70)
 s=Sll()
 s.head=head
 s.position(30)
+######program
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Sll(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        while temp:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+        print("None")
+    def inst_begin(self,data):
+        temp=self.head
+        new_node=Node(data)
+        new_node.next=self.head
+        self.head=new_node
+        temp=self.head
+        result=[]
+        while temp:
+            result.append(str(temp.data))
+            temp=temp.next
+        print("__>".join(result),"None")
+    def insert_middle(self,data):
+        temp=self.head
+        new_node=Node(data)
+        new_node.next=self.head.next.next
+        self.head.next.next=new_node
+        temp=self.head
+        result=[]
+        while temp:
+            result.append(str(temp.data))
+            temp=temp.next
+        print("<->".join(result),"<->None")
+    def insert_end(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(temp.data==None):
+            return
+        if(temp.next==None):
+            return
+        while temp.next:
+            temp=temp.next
+        temp.next=new_node
+        temp=self.head
+        result=[]
+        while temp:
+            result.append(str(temp.data))
+            temp=temp.next
+        print("<->".join(result),"<->None")
+    def delete_begin(self):
+        temp=self.head
+        self.head=self.head.next
+        temp=self.head
+        result=[]
+        while temp:
+            result.append(str(temp.data))
+            temp=temp.next
+        print("<->".join(result),"<->None")
+    def delete_middle(self):
+        temp=self.head
+        self.head.next=self.head.next.next
+        temp=self.head
+        result=[]
+        while temp:
+            result.append(str(temp.data))
+            temp=temp.next
+        print("<->".join(result),"<->None")
+    def delete_end(self):
+        temp=self.head
+        if(temp.data==None):
+            return
+        if(temp.next==None):
+            return
+        while temp.next:
+            temp=temp.next
+        temp.next=None
+        temp=self.head
+        result=[]
+        while temp:
+            result.append(str(temp.data))
+            temp=temp.next
+        print("<->".join(result),"<->None")
+    def position(self,key):
+        temp=self.head
+        positionn=0
+        found=False
+        while(temp):
+            if(temp.data==key):
+                print(f"the key is {key} and its position is {positionn}")
+                found=True
+                return
+            temp=temp.next
+            positionn+=1
+        if(not found):
+            print("not found")
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+head.next.next.next=Node(40)
+head.next.next.next.next=Node(50)
+s=Sll()
+s.head=head
+s.traversal()
+s.inst_begin(800)
+s.delete_begin()
+s.delete_middle()
+s.delete_end()
+s.position(30)
+
+
 
 
 
