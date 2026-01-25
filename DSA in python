@@ -308,6 +308,7 @@ if __name__=="__main__":
 
 #####linked list######
 ###singlelinkedlist#####
+>>>>((((1.program)))
 class Node:
     def __init__(self,data):
         self.data=data
@@ -323,6 +324,7 @@ while temp:
     temp=temp.next
 print("none")
 
+>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -341,6 +343,7 @@ while temp:
     temp=temp.next
 print("none")
 
+>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -361,6 +364,7 @@ while temp:
     temp=temp.next
 print("none")
 
+>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -379,7 +383,7 @@ while temp:
     temp=temp.next
 print("none")
 
-
+>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -399,7 +403,7 @@ while temp:
 print("none")
 
 
-
+>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -418,7 +422,7 @@ while temp:
     temp=temp.next
 print("none")
 
-
+>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -437,10 +441,7 @@ while temp:
     temp=temp.next
 print("none")
 
-
-
-
-
+>>>>>>
 class Node:
     def __init__(self,data):
         self.data=data
@@ -458,6 +459,7 @@ while temp:
     temp=temp.next
 print("none")
 
+>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -476,6 +478,7 @@ while temp:
     temp=temp.next
 print("none")
 
+>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -494,6 +497,7 @@ while temp:
     temp=temp.next
 print("none")
 
+>>>>>>>>
 class Node:
     def __init__(self,data):
         self.data=data
@@ -513,6 +517,7 @@ while temp:
     temp=temp.next
 print("none")
 
+>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -529,6 +534,7 @@ while temp:
     temp=temp.next
 print("none")
 
+>>>>>>>
 class Node:
     def __init__(self,data):
         self.data=data
@@ -544,6 +550,7 @@ while temp:
     temp=temp.next
 print("none")
 
+>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -563,6 +570,7 @@ print(head.data)
 print(head)
 print(head.next.data)
 
+>>>>>>>>..
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -577,6 +585,7 @@ while temp:
     temp=temp.next
 print("None")
 
+>>>>>>>>>...
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -595,6 +604,7 @@ while temp:
     temp=temp.next
 print("None")
 
+>>>>>>>>>>>>...
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -613,7 +623,7 @@ while temp:
     temp=temp.next
 print("none")
 
-
+>>>>>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -632,6 +642,7 @@ while temp:
     temp=temp.next
 print("None")
 
+>>>>>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -654,8 +665,7 @@ while temp:
     temp=temp.next
     position+=1
 
-
-
+>>>>>>>>>>..
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -707,6 +717,7 @@ s.inst_begin(1234)
 s.inst_middle(123456)
 s.inst_end(90786)
 
+>>>>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -792,7 +803,7 @@ s=Sll()
 s.head=head
 s.finding_position(30)
 
-
+>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -823,7 +834,7 @@ s=Sll()
 s.head=head
 s.finding_position(30)
 
-
+>>>>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -853,6 +864,8 @@ head.next.next.next.next.next.next=Node(70)
 s=Sll()
 s.head=head
 s.position(30)
+
+>>>>>>>>>>>>>
 ######program
 class Node(object):
     def __init__(self,data):
@@ -964,9 +977,12 @@ s.delete_begin()
 s.delete_middle()
 s.delete_end()
 s.position(30)
+
+
 #####doubly linked list####
 ###########################
 ###########################
+>>>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -997,7 +1013,7 @@ s=Sll()
 s.head=head
 s.finding_position(30)
 
-
+>>>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -1028,6 +1044,7 @@ s=Sll()
 s.head=head
 s.position(30)
 
+>>>>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -1079,7 +1096,7 @@ d.head=head
 d.traversal()
 d.inst_begin(900000)
 
-
+>>>>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -1179,6 +1196,7 @@ d.inst_begin(1200000)
 d.inst_middle(24000000)
 d.inst_end(90000000)
 
+>>>>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -1277,7 +1295,7 @@ d.insert_begin(100)
 d.insert_middle(3000)
 d.insert_end(4000)
 
-
+>>>>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -1376,7 +1394,7 @@ d.insert_begin(100)
 d.insert_middle(200)
 d.insert_end(300)
 
-
+>>>>>>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -1452,7 +1470,7 @@ d.insert_begin(1001)
 d.insert_middle(2002)
 d.insert_end(3003)
 
-
+>>>>>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -1490,7 +1508,7 @@ d=Dll()
 d.head=head
 d.traversal()
 
-
+>>>>>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -1602,6 +1620,7 @@ s.delete_middle()
 s.delete_end()
 s.position(30)
 
+>>>>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -1689,7 +1708,7 @@ d.insrt_middle(200)
 d.inst_end(300)
 
 
-
+>>>>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -1727,6 +1746,7 @@ d=Dll()
 d.head=head
 d.delete_begin()
 
+>>>>>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -1764,7 +1784,7 @@ d=Dll()
 d.head=head
 d.delete_begin()
 
-
+>>>>>>>>>>>>>..
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -1802,6 +1822,7 @@ d=Dll()
 d.head=head
 d.delete_begin()
 
+>>>>>>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -1841,6 +1862,7 @@ d=Dll()
 d.head=head
 d.delete_middle()
 
+>>>>>>>>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -1905,7 +1927,7 @@ d.delete_begin()
 d.delete_middle()
 d.delete_end()
 
-
+>>>>>>>>>>>>>>>.
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -1982,6 +2004,7 @@ d.delete_begin()
 d.delete_middle()
 d.delete_end()
 
+>>>>>>>>>>>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -2055,6 +2078,792 @@ d.delete_begin()
 d.delete_middle()
 d.delete_end()
 d.position(303)
+
+>>>>>>>>>>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.prev=None
+        self.data=data
+        self.next=None
+head=Node(10)#n1
+head.next=Node(20)#n2
+head.next.prev=head
+head.next.next=Node(30)#n3
+head.next.next.prev=head.next
+temp=head
+head.next=head.next.next
+temp=head
+while temp:
+    print(temp.data,"__>",end=" ")
+    if(temp.next==None):
+        last=temp
+    temp=temp.next
+print("None")
+temp=last
+while temp:
+    print(temp.data,"<__",end=" ")
+    temp=temp.prev
+print("None")
+
+>>>>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.prev=None
+        self.data=data
+        self.next=None
+head=Node(1)
+head.next=Node(2)
+head.next.prev=head
+head.next.next=Node(3)
+head.next.next.prev=head.next
+head.next.next.next=Node(4)
+head.next.next.next.prev=head.next.next
+head.next.next.next.next=Node(5)
+head.next.next.next.next.prev=head.next.next.next
+temp=head
+while temp:
+    print(temp.data,"__>",end=" ")
+    if(temp.next==None):
+        last=temp
+    temp=temp.next
+print("None")
+temp=last
+while temp:
+    print(temp.data,"<__",end=" ")
+    temp=temp.prev
+print("None")
+
+>>>>>>>>>>>>>>>>>>..
+class Node(object):
+    def __init__(self,data):
+        self.prev=None
+        self.data=data
+        self.next=None
+head=Node(10)
+head.next=Node(20)
+head.next.prev=head
+head.next.next=Node(30)
+head.next.next.prev=head.next
+head.next.next.next=Node(40)
+head.next.next.next.prev=head.next.next
+new_node=Node(90)
+temp=head
+new_node.next=head
+head.prev=new_node
+head=new_node
+temp=head
+while temp:
+    print(temp.data,"__>",end=" ")
+    if(temp.next==None):
+        last=temp
+    temp=temp.next
+print("None")
+temp=last
+while temp:
+    print(temp.data,"<__",end=" ")
+    temp=temp.prev
+print("None")
+
+>>>>>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.prev=None
+        self.data=data
+        self.next=None
+head=Node(10)
+head.next=Node(20)
+head.next.prev=head
+head.next.next=Node(30)
+head.next.next.prev=head.next
+new_node=Node(80)
+temp=head
+new_node.next=head
+head.prev=new_node
+head=new_node
+temp=head
+while temp:
+    print(temp.data,"__>",end=" ")
+    if(temp.next==None):
+        last=temp
+    temp=temp.next
+print("None")
+temp=last
+while temp:
+    print(temp.data,"<__",end=" ")
+    temp=temp.prev
+print("None")
+
+>>>>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.prev=None
+        self.data=data
+        self.next=None
+head=Node(1000)
+head.next=Node(2000)
+head.next.prev=head
+head.next.next=Node(3000)
+head.next.next.prev=head.next
+head.next.next.next=Node(4000)
+head.next.next.next.prev=head.next.next
+temp=head
+while temp:
+    print(temp.data,"__>",end=" ")
+    if(temp.next==None):
+        last=temp
+    temp=temp.next
+print("None")
+temp=last
+while temp:
+    print(temp.data,"<__",end=" ")
+    temp=temp.prev
+print("None")
+
+>>>>>>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.prev=None
+        self.data=data
+        self.next=None
+head=Node(1000)
+head.next=Node(2000)
+head.next.prev=head
+head.next.next=Node(3000)
+head.next.next.prev=head.next
+head.next.next.next=Node(4000)
+head.next.next.next.prev=head.next.next
+head.next.next.next.next=Node(5000)
+head.next.next.next.next.prev=head.next.next.next
+new_node=Node(100000)
+temp=head
+new_node.next=head
+head.prev=new_node
+head=new_node
+temp=head
+while temp:
+    print(temp.data,"__>",end=" ")
+    if(temp.next==None):
+        last=temp
+    temp=temp.next
+print("None")
+temp=last
+while temp:
+    print(temp.data,"<--",end=" ")
+    temp=temp.prev
+print("None")
+
+>>>>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.prev=None
+        self.data=data
+        self.next=None
+head=Node(1000)
+head.next=Node(2000)
+head.next.prev=head
+head.next.next=Node(3000)
+head.next.next.prev=head.next
+head.next.next.next=Node(4000)
+head.next.next.next.prev=head.next.next
+new_node=Node(100000)
+temp=head
+new_node.next=head.next.next
+new_node.prev=head.next
+head.next.next=new_node
+temp=head
+while temp:
+    print(temp.data,"__>",end=" ")
+    if(temp.next==None):
+        last=temp
+    temp=temp.next
+print("None")
+temp=last
+while temp:
+    print(temp.data,"<__",end=" ")
+    temp=temp.prev
+print("None")
+
+>>>>>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.prev=None
+        self.data=data
+        self.next=None
+class Dll(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        while temp:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+        print("None")
+        temp=self.head
+        if(not temp):
+            return
+        while temp.next:
+            temp=temp.next
+        while temp:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+        print("None")
+head=Node(1000)
+head.next=Node(2000)
+head.next.prev=head
+head.next.next=Node(3000)
+head.next.next.prev=head.next
+head.next.next.next=Node(4000)
+head.next.next.next.prev=head.next.next
+d=Dll()
+d.head=head
+d.traversal()
+
+>>>>>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.prev=None
+        self.data=data
+        self.next=None
+class Dll(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        while temp:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+        print("None")
+        temp=self.head
+        if(not temp):
+            return
+        while temp.next:
+            temp=temp.next
+        while temp:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+        print("None")
+head=Node(1000)
+head.next=Node(2000)
+head.next.prev=head
+head.next.next=Node(3000)
+head.next.next.prev=head.next
+head.next.next.next=Node(4000)
+head.next.next.next.prev=head.next.next
+d=Dll()
+d.head=head
+d.traversal()
+
+>>>>>>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+        self.prev=None
+head=Node(1)
+head.next=Node(2)
+head.next.prev=head
+head.next.next=Node(3)
+head.next.next.prev=head.next
+head.next.next.next=Node(4)
+head.next.next.next.prev=head.next.next
+head.next.next.next.next=Node(5)
+head.next.next.next.next.prev=head.next.next
+temp=head
+while temp:
+    print(temp.data,"__>",end=" ")
+    if(temp.next==None):
+        last=temp
+    temp=temp.next
+print("None")
+temp=last
+while temp:
+    print(temp.data,"<__",end=" ")
+    temp=temp.prev
+print("None")
+
+#####traversal(farword and backword######
+########################################
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+        self.prev=None
+head=Node(1)
+head.next=Node(2)
+head.next.prev=head
+head.next.next=Node(3)
+head.next.next.prev=head.next
+head.next.next.next=Node(4)
+head.next.next.next.prev=head.next.next
+head.next.next.next.next=Node(5)
+head.next.next.next.next.prev=head.next.next.next
+temp=head
+while temp:
+    print(temp.data,"__>",end=" ")
+    if(temp.next==None):
+        last=temp
+    temp=temp.next
+print("None")
+temp=last
+while temp:
+    print(temp.data,"<__",end=" ")
+    temp=temp.prev
+print("None")
+
+>>>>>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+        self.prev=None
+head=Node(100)
+head.next=Node(200)
+head.next.prev=head
+head.next.next=Node(300)
+head.next.next.prev=head.next
+head.next.next.next=Node(400)
+head.next.next.next.prev=head.next.next
+head.next.next.next.next=Node(500)
+head.next.next.next.next.prev=head.next.next.next
+temp=head
+while temp:
+    print(temp.data,"__>",end=" ")
+    if(temp.next==None):
+        last=temp
+    temp=temp.next
+print("None")
+temp=last
+while temp:
+    print(temp.data,"<__",end=" ")
+    temp=temp.prev
+print("None")
+
+>>>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.prev=None
+        self.next=None
+class Dll(object):
+    def __init__(self):
+        self.head=None
+    def treversal(self):
+        temp=self.head
+        while temp:
+           print(temp.data,"__>",end=" ")
+           if(temp.next==None):
+               last=temp
+           temp=temp.next
+        print("None")
+        temp=last
+        while temp:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+        print("None")
+head=Node(1000)
+head.next=Node(2000)
+head.next.prev=head
+head.next.next=Node(3000)
+head.next.next.prev=head.next
+head.next.next.next=Node(4000)
+head.next.next.next.prev=head.next.next
+d=Dll()
+d.head=head
+d.treversal()
+
+>>>>>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+        self.prev=None
+class Dll(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        while temp:
+            print(temp.data,"__>",end=" ")
+            if(temp.next==None):
+                last=temp
+            temp=temp.next
+        print("None")
+        temp=last
+        while temp:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+        print("None")
+head=Node(1000)
+head.next=Node(2000)
+head.next.prev=head
+head.next.next=Node(3000)
+head.next.next.prev=head.next
+head.next.next.next=Node(4000)
+head.next.next.next.prev=head.next.next
+head.next.next.next.next=Node(5000)
+head.next.next.next.next.prev=head.next.next.next
+d=Dll()
+d.head=head
+d.traversal()
+
+>>>>>>>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+        self.prev=None
+head=Node(1000)
+head.next=Node(2000)
+head.next.prev=head
+head.next.next=Node(3000)
+head.next.next.prev=head.next
+head.next.next.next=Node(4000)
+head.next.next.next.prev=head.next.next
+head.next.next.next.next=Node(5000)
+head.next.next.next.next.prev=head.next.next.next
+new_node=Node(800)
+temp=head
+new_node.next=head
+head.prev=new_node
+head=new_node
+temp=head
+while temp:
+    print(temp.data,"__>",end=" ")
+    if(temp.next==None):
+        last=temp
+    temp=temp.next
+print("None")
+temp=last
+while temp:
+    print(temp.data,"<__",end=" ")
+    temp=temp.prev
+print("None")
+
+>>>>>>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+        self.prev=None
+class Dll(object):
+    def __init__(self):
+        self.head=None
+    def inst_begin(self,data):
+        new_node=Node(data)
+        if(self.head is not None):
+            new_node.next=self.head
+            self.head.prev=new_node
+        self.head=new_node
+        temp=self.head
+        while temp:
+            print(temp.data,"__>",end=" ")
+            if(temp.next==None):
+                last=temp
+            temp=temp.next
+        print("None")
+        temp=last
+        while temp:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+        print("None")
+head=Node(1000)
+head.next=Node(2000)
+head.next.prev=head
+head.next.next=Node(3000)
+head.next.next.prev=head.next
+head.next.next.next=Node(4000)
+head.next.next.next.prev=head.next.next
+head.next.next.next.next=Node(5000)
+head.next.next.next.next.prev=head.next.next.next
+d=Dll()
+d.head=head
+d.inst_begin(19089)
+
+>>>>>>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.prev=None
+        self.next=None
+class Dll(object):
+    def __init__(self):
+        self.head=None
+    def inst_begin(self,data):
+        new_node=Node(data)
+        if(self.head is not None):
+            new_node.next=self.head
+            self.head.prev=new_node
+            self.head=new_node
+        temp=self.head
+        while temp:
+            print(temp.data,"__>",end=" ")
+            if(temp.next==None):
+                last=temp
+            temp=temp.next
+        print("None")
+        temp=last
+        while temp:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+        print("None")
+head=Node(1000)
+head.next=Node(2000)
+head.next.prev=head
+head.next.next=Node(3000)
+head.next.next.prev=head.next
+head.next.next.next=Node(4000)
+head.next.next.next.prev=head.next.next
+head.next.next.next.next=Node(5000)
+head.next.next.next.next.prev=head.next.next.next
+d=Dll()
+d.head=head
+d.inst_begin(6789099999)
+
+>>>>>>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.prev=None
+        self.next=None
+head=Node(1000)
+head.next=Node(2000)
+head.next.prev=head
+head.next.next=Node(3000)
+head.next.next.prev=head.next
+head.next.next.next=Node(4000)
+head.next.next.next.prev=head.next.next
+head.next.next.next.next=Node(5000)
+head.next.next.next.next.prev=head.next.next.next
+new_node=Node(4567)
+temp=head
+new_node.next=head.next
+head.next.prev=new_node
+new_node.prev=head
+head.next=new_node
+temp=head
+while temp:
+    print(temp.data,"__>",end=" ")
+    if(temp.next==None):
+        last=temp
+    temp=temp.next
+print("None")
+temp=last
+while temp:
+    print(temp.data,"<__",end=" ")
+    temp=temp.prev
+print("None")
+
+>>>>>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.prev=None
+        self.next=None
+head=Node(10)
+head.next=Node(20)
+head.next.prev=head
+head.next.next=Node(30)
+head.next.next.prev=head.next
+head.next.next.next=Node(40)
+head.next.next.next.prev=head.next.next
+head.next.next.next.next=Node(50)
+head.next.next.next.next.prev=head.next.next.next
+temp=head
+while temp:
+    print(temp.data,"__>",end=" ")
+    if(temp.next==None):
+        last=temp
+    temp=temp.next
+print("None")
+temp=last
+while temp:
+    print(temp.data,"<__",end=" ")
+    temp=temp.prev
+print("None")
+
+>>>>>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+        self.prev=None
+class Dll(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        while temp:
+            print(temp.data,"__>",end=" ")
+            if(temp.next==None):
+                last=temp
+            temp=temp.next
+        print("None")
+        temp=last
+        while temp:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+        print("None")
+    def inst_begin(self,data):
+        new_node=Node(data)
+        temp=self.head
+        new_node.next=self.head
+        self.head.prev=new_node
+        self.head=new_node
+        temp=self.head
+        while temp:
+            print(temp.data,"<__",end=" ")
+            if(temp.next==None):
+                last=temp
+            temp=temp.next
+        print("None")
+        temp=last
+        while temp:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+        print("None")
+    def inst_middle(self,data):
+        new_node=Node(data)
+        temp=self.head
+        new_node.next=self.head.next
+        self.head.next.prev=new_node
+        self.head.next=new_node
+        new_node.prev=self.head
+        temp=self.head
+        while temp:
+            print(temp.data,"__>",end=" ")
+            if(temp.next==None):
+                last=temp
+            temp=temp.next
+        print("None")
+        temp=last
+        while temp:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+        print("None")
+    def instt_begin(self,data):
+        new_node=Node(data)
+        temp=self.head
+        new_node.next=self.head.next.next
+        head.next.next.prev=new_node
+        new_node.prev=self.head.next
+        self.head.next.next=new_node
+        temp=self.head
+        while temp:
+            print(temp.data,"__>",end=" ")
+            if(temp.next==None):
+                last=temp
+            temp=temp.next
+        print("None")
+        temp=last
+        while temp:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+        print("None")
+    def instr_middle(self,data):
+        temp=self.head
+        new_node=Node(data)
+        new_node.next=self.head.next.next.next
+        self.head.next.next.next.prev=new_node
+        new_node.prev=self.head.next.next
+        self.head.next.next.next=new_node
+        temp=self.head
+        while temp:
+            print(temp.data,"<__",end=" ")
+            if(temp.next==None):
+                last=temp
+            temp=temp.next
+        print("None")
+        temp=last
+        while temp:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+        print("None")
+    def inst_middle11(self,data):
+        temp=self.head
+        new_node=Node(data)
+        new_node.next=self.head.next.next
+        self.head.next.next.prev=new_node
+        self.head.next=new_node
+        new_node.prev=self.head.next
+        temp=self.head
+        while temp:
+            print(temp.data,"<__",end=" ")
+            if(temp.next==None):
+                last=temp
+            temp=temp.next
+        print("None")
+        temp=last
+        while temp:
+            print(temp.data,"<__",end="  ")
+            temp=temp.prev
+        print("None")
+head=Node(10)
+head.next=Node(20)
+head.next.prev=head
+head.next.next=Node(30)
+head.next.next.prev=head.next
+head.next.next.next=Node(40)
+head.next.next.next.prev=head.next.next
+head.next.next.next.next=Node(50)
+head.next.next.next.next.prev=head.next.next.next
+d=Dll()
+d.head=head
+d.instr_middle(900000)
+d.inst_middle11(567890)
+
+>>>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+        self.prev=Node
+class Dll(object):
+    def __init(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        while temp:
+            print(temp.data,"__>",end=" ")
+            if(temp.next==None):
+                last=temp
+            temp=temp.next
+        print("None")
+        temp=last
+        while temp:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+        print("None")
+    def inst_begin(self,data):
+        temp=self.head
+        new_node=Node(data)
+        new_node.next=self.head
+        self.head.prev=new_node
+        self.head=new_node
+        temp=self.head
+        while temp:
+            print(temp.data,"__>",end=" ")
+            if(temp.data==None):
+                last=temp
+            temp=temp.next
+        print("None")
+        temp=last
+        while temp:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+        print("None")
+head=Node(10)
+head.next=Node(20)
+head.next.prev=head
+head.next.next=Node(30)
+head.next.next.prev=head.next
+head.next.next.next=Node(40)
+head.next.next.next.prev=head.next.next
+d=Dll()
+d.head=head
+d.traversal()
+d.inst_begin(900000)
+
+
 
 
 
