@@ -385,6 +385,85 @@ while(i<=p):  #1,2,3,4,5
 
 
 FUNCTIONS:::::::
+
+###sum of odd numbers##
+def sum_of_odd(n):
+    sum=0
+    for i in range(0,n+1):
+        if(i%2!=0):
+           sum=sum+i
+    return sum
+print(sum_of_odd(3))
+
+#######sumofeven######
+def sum_of_even(n):
+    sum=0
+    for i in range(0,n+1):
+        if(i%2==0):
+            sum=sum+i
+    return sum
+print(sum_of_even(3))
+
+####factorial######
+def factorial(n):
+    sum=1
+    for i in range(1,n+1):
+        sum=sum*i
+    return sum
+print(factorial(3))
+
+######sumofnumbers####
+def sum_of_numbers(n):
+    total=0
+    for i in range(1,n):
+        total+=i
+    return total
+print(sum_of_numbers(3))
+
+####factors#####
+def factors(n):
+    for i in range(1,10):
+        if(i%n==0):
+            print(i,end=",")
+factors(2)
+
+######multiples####
+def multiple(n):
+    for i in range(0,10):
+        print(i*n)
+multiple(10)
+##
+def multiple(n):
+    for i in range(0,20):
+        print(i*n)
+multiple(11)
+
+####prime_sum####
+def prime_sum(n):
+    sum=0
+    for i in range(2,n):
+        is_prime=True
+        for j in range(2,i):
+            if(i%j==0):
+                is_prime=False
+                break
+        if is_prime:
+            sum=sum+i
+    return sum
+print(prime_sum(10))
+
+####sum_numbers#####
+def prime(n):
+    for i in range(2,n+1):
+        is_prime=True
+        for j in range(2,i):
+            if(i%j==0):
+                is_prime=False
+                break
+        if(is_prime):
+            print(i,end=",")
+prime(10)
+
 ######FUNCTIONS######
 a=input("enter the name")
 def greet():
