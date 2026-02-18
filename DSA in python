@@ -305,7 +305,7 @@ if __name__=="__main__":
     print(q.deques())
     print(q.deques())
     print(q.size())
-
+###################################################[[[SINGLY LINKED LIST]]]##############################
 #####linked list######
 ###singlelinkedlist#####
 >>>>((((1.program)))
@@ -977,12 +977,8 @@ s.delete_begin()
 s.delete_middle()
 s.delete_end()
 s.position(30)
-
-
-#####doubly linked list####
-###########################
-###########################
 >>>>>>>>>>>
+>>>>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -1013,38 +1009,13 @@ s=Sll()
 s.head=head
 s.finding_position(30)
 
->>>>>>>>>>>
-class Node(object):
-    def __init__(self,data):
-        self.data=data
-        self.next=None
-class Sll(object):
-    def __init__(self):
-        self.head=None
-    def position(self,key):
-        temp=self.head
-        position=0
-        Found=False
-        while(temp):
-            if(temp.data==key):
-                print(f"the value is {key} and its position is {position}")
-                Found=True
-            temp=temp.next
-            position+=1
-        if(not Found):
-            print("not found")
-head=Node(10)
-head.next=Node(20)
-head.next.next=Node(30)
-head.next.next.next=Node(40)
-head.next.next.next.next=Node(50)
-head.next.next.next.next.next=Node(60)
-head.next.next.next.next.next.next=Node(70)
-s=Sll()
-s.head=head
-s.position(30)
 
->>>>>>>>>>>>
+
+#############################################[[[[doubly linked list]]]]##########################
+###########################
+###########################
+>>>>>>>>>>>
+<<<<<<<<<<<<<>>>>>>>>>>>>
 class Node(object):
     def __init__(self,data):
         self.data=data
@@ -2864,5 +2835,2959 @@ d.traversal()
 d.inst_begin(900000)
 
 
+##################################[[[[[CIRCULALY LINKED LIST]]]]]#######################
+########################################################################################
+>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class CircularLinkedList(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("list is empty")
+            return
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+head=Node(1)
+head.next=Node(2)
+head.next.next=Node(3)
+head.next.next.next=head
+c=CircularLinkedList()
+c.head=head
+c.traversal()
+
+>>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class CircularLinkedList(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty linkedlist")
+            return
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp.next==self.head):
+                break
+        print("HEAD")
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+head.next.next.next=Node(40)
+head.next.next.next.next=head
+c=CircularLinkedList()
+c.head=head
+c.traversal()
+
+>>>>>>>>>
+class Node(object):
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+class CircularLinkedList(object):
+    def __init__(self):
+        self.head = None
+
+    def insert_begin(self, data):
+        new_node = Node(data)
+
+        if self.head is None:
+            # First node case
+            self.head = new_node
+            new_node.next = self.head
+        else:
+            # Find last node
+            temp = self.head
+            while temp.next != self.head:
+                temp = temp.next
+
+            # Link new node
+            new_node.next = self.head
+            temp.next = new_node
+            self.head = new_node   # update head
+
+    def traversal(self):
+        if self.head is None:
+            print("list is empty")
+            return
+        temp = self.head
+        while True:
+            print(temp.data, "__>", end=" ")
+            temp = temp.next
+            if temp == self.head:
+                break
+        print("HEAD")
+
+# Create circular linked list manually
+head = Node(200)
+head.next = Node(300)
+head.next.next = Node(400)
+head.next.next.next = Node(490)
+head.next.next.next.next = head
+
+c = CircularLinkedList()
+c.head = head
+
+# Insert at beginning
+c.insert_begin(89000)
+
+# Traverse to check
+c.traversal()
+
+>>>>>>>>>>>
+<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Circularlinkedlist(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        if(self.head is None):
+            print("empty linkedlist")
+            return
+        temp=temp.next
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp.next==self.head):
+                break
+        print("head")
+head=Node(10)
+head.next=Node(20)
+head.next.next=Node(30)
+head.next.next.next=head
+c=CircularLinkedList()
+c.head=head
+c.traversal()
+
+>>>>>>>>>>>
+<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+       self.data=data
+       self.next=None
+class Circularlinkedlist(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty linkedlist")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp.next==self.head):
+                break
+        print("headd")
+c=Circularlinkedlist()
+c.traversal()
 
 
+>>>>>>>>>>>>>
+<<<<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Circularlinkedlist(object):
+    def __init__(self):
+        self.head=None
+    def insert_begin(self,data):
+        new_node=Node(data)
+        temp=self.head
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            new_node.next=self.head
+            temp.next=new_node
+            self.head=new_node
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty list")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+head=Node(100)
+head.next=Node(200)
+head.next.next=Node(300)
+head.next.next.next=head
+c=Circularlinkedlist()
+c.head=head
+c.insert_begin(1000)
+c.traversal()
+
+>>>>>>>>>>>>
+<<<<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Circulatlist(object):
+    def __init__(self):
+        self.head=None
+    def insert_begin(self,data):
+        new_node=Node(data)
+        temp=self.head
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            new_node.next=self.head
+            temp.next=new_node
+            self.head=new_node
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp.next==self.head):
+                break
+        print("head")
+c=Circulatlist()
+c.insert_begin(11000)
+c.traversal()
+
+>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Circulat(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("Empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp.next==self.head):
+                break
+        print("head")
+c=Circulat()
+c.traversal()
+
+>>>>>>>>>>>>>
+<<<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Circuit(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp.next==self.head):
+                break
+        print("head")
+c=Circuit()
+c.traversal()
+
+>>>>>>>>>>>>
+<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Circuit(object):
+    def __init__(self):
+        self.head=None
+    def treversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp.next==self.head):
+                break
+        print("head")
+head=Node(200)
+head.next=Node(300)
+head.next.next=head
+c=Circuit()
+c.head=head
+c.treversal()
+
+>>>>>>>>>>>>>
+<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Circularlinkedlist(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+head=Node(2002)
+head.next=Node(3003)
+head.next.next=head
+c=Circularlinkedlist()
+c.head=head
+c.traversal()
+
+>>>>>>>>>>>>>
+>>>>>>>>>>>>
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Circular(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+#head=Node(200)
+#head.next=Node(300)
+#head.next.next=head
+c=Circular()
+#.head=head
+c.traversal()
+
+>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Circularlinkedlist(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("Empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+head=Node(2002)
+head.next=Node(3003)
+head.next.next=head
+c=Circularlinkedlist()
+c.head=head
+c.traversal()
+
+>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Circularlinkedlist(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("hheadd")
+head=Node(2002)
+head.next=Node(3003)
+head.next.next=Node(4004)
+head.next.next.next=Node(5005)
+head.next.next.next.next=head
+c=Circularlinkedlist()
+c.head=head
+c.traversal()
+
+>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Circular(object):
+    def __init__(self):
+        self.head=None
+    def insert_begin(self,data):
+        new_node=Node(data)
+        temp=self.head
+        if(self.head is None):
+            self.head = new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            new_node.next=self.head
+            temp.next=new_node
+            self.head=new_node
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+c=Circular()
+c.insert_begin(1000)
+c.traversal()
+
+>>>>>>>>>>
+<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Circularlinkedlist(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def insert_begin(self,data):
+        new_node=Node(data)
+        temp=self.head
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            new_node.next=self.head
+            temp.next=new_node
+            self.head=new_node
+    def display(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("HEAD")
+head=Node(100)
+head.next=Node(200)
+head.next.next=Node(300)
+head.next.next.next=Node(400)
+head.next.next.next.next=head
+c=Circularlinkedlist()
+c.head=head
+c.traversal()
+c.insert_begin(1100011)
+c.display()
+
+>>>>>>>>>>>
+<<<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Cll(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+head=Node(110011)
+head.next=Node(220022)
+head.next.next=head
+c=Cll()
+c.head=head
+c.traversal()
+
+>>>>>>>>>>>>>>
+<<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Cll(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("headdd")
+head=Node(110011)
+head.next=Node(220022)
+head.next.next=Node(330033)
+head.next.next.next=Node(440044)
+head.next.next.next.next=head
+c=Cll()
+c.head=head
+c.traversal()
+
+>>>>>>>>>>>>
+<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Cll(object):
+    def __init__(self):
+        self.head=None
+    def insert_begin(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            new_node.next=self.head
+            temp.next=new_node
+            self.head=new_node
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+c=Cll()
+c.insert_begin(1000)
+c.traversal()
+head=Node(100)
+head.next=Node(200)
+head.next.next=head
+c.head=head
+c.insert_begin(50000)
+c.traversal()
+
+>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Cll(object):
+    def __init__(self):
+        self.head=None
+    def insertion_end(self,data):
+        new_node=Node(data)
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            temp.next=new_node
+            new_node.next=self.head
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("HEAD")
+head=Node(110011)
+head.next=Node(220022)
+head.next.next=head
+c=Cll()
+c.head=head
+c.insertion_end(23445)
+c.traversal()
+
+>>>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Csll(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("HEAD")
+    def traversal1(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def insertion_begin(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            new_node.next=self.head
+            temp.next=new_node
+            self.head=new_node
+    def display(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("its linked to head")
+    def insertion_end(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            temp.next=new_node
+            new_node.next=self.head
+    def display1(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("HEADDDDDDD")
+head=Node(110011)
+head.next=Node(220022)
+head.next.next=Node(330033)
+head.next.next.next=Node(440044)
+head.next.next.next.next=Node(550055)
+head.next.next.next.next.next=head
+c=Csll()
+c.traversal()
+c.insertion_begin(1000000)
+c.display()
+c.insertion_end(2400000)
+c.display1()
+c.head=head
+c.traversal()
+c.insertion_begin(2000000)
+c.display()
+c.insertion_end(300000)
+c.display1()
+
+>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Csll(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("headdd")
+    def insert_begin(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            new_node.next=self.head
+            temp.next=new_node
+            self.head=new_node
+    def traversal1(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("begin node is linked to head")
+    def insertion_end(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            temp.next=new_node
+            new_node.next=self.head
+    def display(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("endhead is linked")
+head=Node(110011)
+head.next=Node(220022)
+head.next.next=Node(330033)
+head.next.next.next=Node(440044)
+head.next.next.next.next=head
+c=Csll()
+c.head=head
+c.insert_begin(99000000)
+c.display()
+c.insertion_end(25566400000)
+c.display()
+
+>>>>>>>>>>>>
+<<<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Sll(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        while temp:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+        print("None")
+    def del_end(self):
+        temp=self.head
+        if(self.head.next==None):
+            self.head=None
+            return
+        while temp.next.next:
+            temp=temp.next
+        temp.next=None
+        while temp:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+        print("None")
+head=Node(110011)
+head.next=Node(220022)
+head.next.next=Node(330033)
+head.next.next.next=Node(440044)
+head.next.next.next.next=Node(550055)
+s=Sll()
+s.head=head
+s.traversal()
+s.del_end()
+
+>>>>>>>>>>>
+<<<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class circularlinkedlist(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("Empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("HEAD")
+    def insert_begin(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            new_node.next=self.head
+            temp.next=new_node
+            self.head=new_node
+    def display(self):
+        if(self.head==None):
+            print("Empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("None")
+    def insert_middle(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            new_node.next=self.head.next.next
+            self.head.next.next=new_node
+    def total(self):
+        if(self.head==None):
+            print("Empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("HEAD")
+    def insert_end(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=temp.next
+            while temp.next!=self.head:
+                temp=temp.next
+            temp.next=new_node
+            new_node.next=self.head
+    def final(self):
+        if(self.head==None):
+            print("Empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("HEAD")
+head=Node(110011)
+head.next=Node(220022)
+head.next.next=Node(330033)
+head.next.next.next=Node(440044)
+head.next.next.next.next=Node(550055)
+head.next.next.next.next=head
+c=circularlinkedlist()
+c.head=head
+c.traversal()
+c.insert_begin(99000000)
+c.display()
+c.insert_middle(234567)
+c.total()
+c.insert_end(555555)
+c.final()
+
+>>>>>>>>>>>>
+<<<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Cll(object):
+    def __init__(self):
+        self.next=None
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("HEAD")
+    def insert_begin(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        temp=self.head
+        while temp.next!=self.head:
+            temp=temp.next
+        new_node.next=self.head
+        temp.next=new_node
+        self.head=new_node
+    def display(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("HEAD")
+    def insert_middle(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            new_node.next=self.head.next
+            self.head.next=new_node
+    def found(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def insert_end(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            temp.next=new_node
+            new_node.next=self.head
+    def total(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+head=Node(110011)
+head.next=Node(220022)
+head.next.next=Node(330033)
+head.next.next.next=Node(440044)
+head.next.next.next.next=Node(555005)
+head.next.next.next.next.next=head
+c=Cll()
+c.head=head
+c.traversal()
+c.insert_begin(11110000)
+c.display()
+c.insert_middle(222222234567)
+c.found()
+c.insert_end(1000000000)
+c.total()
+
+>>>>>>>>>>>
+<<<<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Cll(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("HEAD")
+    def insert_begin(self,data):
+        new_node=Node(data)
+        temp=self.head
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            new_node.next=self.head
+            temp.next=new_node
+            self.head=new_node
+    def traversal1(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("HEAD")
+    def insert_middle(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            new_node.next=self.head.next.next
+            self.head.next.next=new_node
+    def traversal2(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("HEAD")
+    def insert_end(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            temp.next=new_node
+            new_node.next=self.head
+    def traversal3(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("HEAD")
+head=Node(110011)
+head.next=Node(220022)
+head.next.next=Node(330033)
+head.next.next.next=Node(440044)
+head.next.next.next.next=Node(555005)
+head.next.next.next.next.next=head
+c=Cll()
+c.head=head
+c.traversal()
+c.insert_begin(11110000)
+c.traversal1()
+c.insert_middle(222222)
+c.traversal2()
+c.insert_end(33333333)
+c.traversal3()
+
+>>>>>>>>>>>>
+<<<<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Cll(object):
+    def __init__(self):
+        self.head=None
+    def del_begin(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        if(self.head.next==self.head):
+            self.head=None
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            self.head=self.head.next
+            temp.next=self.head
+    def teaversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while temp.next!=self.head:
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("HEAD")
+head=Node(110011)
+head.next=Node(220022)
+head.next.next=Node(330033)
+head.next.next.next=Node(440044)
+head.next.next.next.next=Node(555005)
+c=Cll()
+c.head=head
+c.del_begin()
+c.teaversal()
+
+>>>>>>>>>>>>>>
+<<<<<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Cll(object):
+    def __init__(self):
+        self.head=None
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("Empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def insert_begin(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            new_node.next=self.head
+            temp.next=new_node
+            self.head=new_node
+    def traversal1(self):
+        temp=self.head
+        if(self.head==None):
+            print("Empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("headdd")
+    def insert_middle(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            new_node.next=self.head.next.next
+            self.head.next.next=new_node
+    def traversal2(self):
+        temp=self.head
+        if(self.head==None):
+            print("Empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def insert_end(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            temp.next=new_node
+            new_node.next=self.head
+    def traversal3(self):
+        temp=self.head
+        if(self.head==None):
+            print("Empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def del_begin(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        if(self.head.next==self.head):
+            return
+        while temp.next!=self.head:
+            temp=temp.next
+        self.head=self.head.next
+        temp.next=self.head
+    def traversal4(self):
+        temp=self.head
+        if(self.head==None):
+            print("Empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def del_end(self):
+        temp=self.head
+        if(self.head==None):
+            print("Empty")
+            return
+        if(self.head.next==self.head):
+            return
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            temp.next=None
+            temp.next=self.head
+    def traversal5(self):
+        temp=self.head
+        if(self.head==None):
+            print("Empty")
+            return
+        temp=self.head
+        while temp.next!=self.head:
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+head=Node(100)
+head.next=Node(200)
+head.next.next=Node(300)
+head.next.next.next=Node(400)
+head.next.next.next.next=Node(500)
+head.next.next.next.next.next=Node(600)
+head.next.next.next.next.next.next=head
+c=Cll()
+c.head=head
+c.traversal()
+c.insert_begin(1001)
+c.traversal1()
+c.insert_middle(2001)
+c.traversal2()
+c.insert_end(3001)
+c.traversal3()
+c.del_begin()
+c.traversal4()
+c.del_end()
+c.traversal5()
+
+>>>>>>>>>>
+<<<<<<<<<<<
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class Cll(object):
+    def __init__(self):
+        self.head=None
+    def insert_begin(self,data):
+        temp = self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            new_node.next=self.head
+            temp.next=new_node
+            self.head=new_node
+    def display(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def insert_middle(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            new_node.next=self.head.next
+            self.head.next=new_node
+            temp.next=self.head
+    def traversal2(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def insert_end(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            temp.next=new_node
+            new_node.next=self.head
+    def traversal3(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+head=Node(100)
+head.next=Node(200)
+head.next.next=Node(300)
+head.next.next.next=head
+c=Cll()
+c.head=head
+c.insert_begin(1001)
+c.display()
+c.insert_middle(2001)
+c.traversal2()
+c.insert_end(3001)
+c.traversal3()
+
+
+####################################CIRCULAR DOUBLY LINKED LIST#######################################
+######################################################################################################
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+        self.prev=None
+class Dcll(object):
+    def __init__(self):
+        self.head=None
+    def traversal_farward(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal_backward(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+    def insert_begin(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next = self.head
+            new_node.prev=new_node
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            new_node.next=self.head
+            self.head.prev=new_node
+            temp.next=new_node
+            self.head=new_node
+            new_node.prev=temp
+    def traversal4(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal5(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("head")
+    def insert_middle(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            new_node.next=self.head.next.next
+            self.head.next.next.prev=new_node
+            self.head.next.next=new_node
+            new_node.prev=self.head.next
+    def traversal6(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal7(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+    def insert_end(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            last=self.head.prev
+            new_node.prev=last
+            new_node.next=self.head
+            last.next=new_node
+            self.head.prev=new_node
+    def traversal8(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal9(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+    def inserrt_end(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            last=self.head.prev
+            new_node.prev=last
+            new_node.next=self.head
+            last.next=new_node
+            self.head.prev=new_node
+    def traversal10(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal11(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+n1=Node(1)
+n2=Node(2)
+n3=Node(3)
+n4=Node(4)
+n5=Node(5)
+n1.next=n2
+n2.next=n3
+n3.next=n4
+n4.next=n5
+n5.next=n1
+n1.prev=n5
+n2.prev=n1
+n3.prev=n2
+n4.prev=n3
+n5.prev=n4
+d=Dcll()
+d.head=n1
+d.traversal_farward()
+d.traversal_backward()
+d.insert_begin(110011)
+d.traversal4()
+d.traversal5()
+d.insert_middle(220022)
+d.traversal6()
+d.traversal7()
+d.insert_end(3300033)
+d.traversal8()
+d.traversal9()
+d.inserrt_end(22233399900)
+d.traversal10()
+d.traversal11()
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.head=None
+class Cll(object):
+    def __init__(self):
+        self.head=None
+    def insert_begin(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            new_node.next=self.head
+            self.head=new_node
+            temp.next=new_node
+    def traversal(self):
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def insert_end(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=self.head
+        else:
+            temp=self.head
+            while temp.next!=self.head:
+                temp=temp.next
+            temp.next=new_node
+            new_node.next=self.head
+    def traversal1(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+head=Node(1)
+head.next=Node(2)
+head.next.next=Node(3)
+head.next.next.next=Node(4)
+head.next.next.next.next=Node(5)
+head.next.next.next.next.next=head
+c=Cll()
+c.head=head
+c.insert_begin(100)
+c.traversal()
+c.insert_end(200)
+c.traversal1()
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class cll(object):
+        def __init__(self):
+            self.head=None
+        def del_begin(self):
+            temp=self.head
+            if(self.head==None):
+                print("empty")
+                return
+            if(self.head.next==self.head):
+                return
+            else:
+                while temp.next!=self.head:
+                    temp=temp.next
+                self.head=self.head.next
+                temp.next=self.head
+        def traversal2(self):
+            temp=self.head
+            if(self.head==None):
+                print("empty")
+                return
+            temp=self.head
+            while True:
+                print(temp.data,"__>",end=" ")
+                temp=temp.next
+                if(temp==self.head):
+                    break
+            print("head")
+        def del_middle(self):
+            temp=self.head
+            if(self.head==None):
+                print("empty")
+                return
+            if(self.head.next==self.head):
+                return
+            else:
+                temp=self.head
+                while temp.next!=self.head:
+                    temp=temp.next
+                self.head.next=self.head.next.next
+                temp.next=self.head
+        def traversal3(self):
+            temp=self.head
+            if(self.head==None):
+                print("empty")
+                return
+            temp=self.head
+            while True:
+                print(temp.data,"__>",end=" ")
+                temp=temp.next
+                if(temp==self.head):
+                    break
+            print("head")
+head=Node(1)
+head.next=Node(2)
+head.next.next=Node(3)
+head.next.next.next=Node(4)
+head.next.next.next.next=Node(5)
+head.next.next.next.next.next=Node(6)
+head.next.next.next.next.next.next=head
+c=cll()
+c.head=head
+c.del_begin()
+c.traversal2()
+c.del_middle()
+c.traversal3()
+
+
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+class cll(object):
+        def __init__(self):
+            self.head=None
+        def del_end(self):
+            temp=self.head
+            if(self.head==None):
+                print("empty")
+                return
+            if(self.head.next==self.head):
+                return
+            else:
+                temp=self.head
+                prev=None
+                while temp.next!=self.head:
+                    prev=temp
+                    temp=temp.next
+                prev.next=self.head
+                temp.next=None
+        def traversal4(self):
+            temp=self.head
+            if(self.head==None):
+                print("empty")
+                return
+            temp=self.head
+            while True:
+                print(temp.data,"__>",end=" ")
+                temp=temp.next
+                if(temp==self.head):
+                    break
+            print("head")
+head=Node(1)
+head.next=Node(2)
+head.next.next=Node(3)
+head.next.next.next=Node(4)
+head.next.next.next.next=Node(5)
+head.next.next.next.next.next=Node(6)
+head.next.next.next.next.next.next=head
+c=cll()
+c.head=head
+c.del_end()
+c.traversal4()
+
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+        self.prev=None
+class Dll(object):
+    def __init__(self):
+        self.head=None
+    def insert_begin(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=new_node
+            new_node.prev=new_node
+        else:
+            last=self.head.prev
+            temp=self.head
+            new_node.next=self.head
+            self.head.prev=new_node
+            last.next=new_node
+            new_node.prev=last
+            self.head=new_node
+    def traversalfarword(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversalbackword(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+    def insertt_first(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=new_node
+            new_node.prev=new_node
+        else:
+            temp=self.head
+            last=self.head.prev
+            new_node.next=self.head
+            self.head.prev=new_node
+            new_node.prev=last
+            last.next=new_node
+            self.head=new_node
+    def traversal1(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal2(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+    def insert_middle(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=new_node
+            new_node.prev=new_node
+        else:
+            last=self.head.prev
+            temp=self.head
+            new_node.next=self.head.next
+            self.head.next.prev=new_node
+            new_node.prev=self.head
+            self.head.next=new_node
+    def traversal3(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal4(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+    def insert_end(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=new_node
+            new_node.prev=new_node
+        else:
+            temp=self.head
+            last=self.head.prev
+            last.next=new_node
+            new_node.prev=last
+            new_node.next=self.head
+            self.head.prev=new_node
+    def traversal5(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal6(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+n1=Node(1)
+n2=Node(2)
+n3=Node(3)
+n4=Node(4)
+n5=Node(5)
+n1.next=n2
+n2.next=n3
+n3.next=n4
+n4.next=n5
+n5.next=n1
+n1.prev=n5
+n2.prev=n1
+n3.prev=n2
+n4.prev=n3
+n5.prev=n4
+d=Dll()
+d.head=n1
+d.insert_begin(500)
+d.traversalfarword()
+d.traversalbackword()
+d.insertt_first(110011)
+d.traversal1()
+d.traversal2()
+d.insert_middle(550055)
+d.traversal3()
+d.traversal4()
+d.insert_end(660066)
+d.traversal5()
+d.traversal6()
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+        self.prev=None
+class Dll(object):
+    def __init__(self):
+        self.head=None
+    def insert_begin(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=new_node
+            new_node.prev=new_node
+        else:
+            last=self.head.prev
+            temp=self.head
+            new_node.next=self.head
+            self.head.prev=new_node
+            new_node.prev=last
+            last.next=new_node
+            self.head=new_node
+    def traversal1(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal2(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+    def insert_middle(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=new_node
+            new_node.prev=new_node
+        else:
+            last=self.head.prev
+            temp=self.head
+            new_node.next=self.head.next.next
+            self.head.next.next.prev=new_node
+            self.head.next.next=new_node
+            new_node.prev=self.head.next
+    def traversal3(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal4(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+    def insert_end(self,data):
+        temp=self.head
+        new_node=Node(data)
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=new_node
+            new_node.prev=new_node
+        else:
+            last=self.head.prev
+            temp=self.head
+            last.next=new_node
+            new_node.prev=last
+            new_node.next=self.head
+            self.head.prev=new_node
+    def traversal5(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal6(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+n1=Node(1)
+n2=Node(2)
+n3=Node(3)
+n4=Node(4)
+n5=Node(5)
+n1.next=n2
+n2.next=n3
+n3.next=n4
+n4.next=n5
+n5.next=n1
+n1.prev=n5
+n2.prev=n1
+n3.prev=n2
+n4.prev=n3
+n5.prev=n4
+d=Dll()
+d.head=n1
+d.insert_begin(110011)
+d.traversal1()
+d.traversal2()
+d.insert_middle(220022)
+d.traversal3()
+d.traversal4()
+d.insert_end(330033)
+d.traversal5()
+d.traversal6()
+
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+        self.prev=None
+class Dll(object):
+    def __init__(self):
+        self.head=None
+    def del_begin(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        if(self.head.next==None):
+            return
+        else:
+            last=self.head.prev
+            temp=self.head
+            self.head=self.head.next
+            self.head.prev=last
+            last.next=self.head
+    def traversal1(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal2(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+    def del_be(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        if(self.head.next==None):
+            return
+        else:
+            last=self.head.prev
+            temp=self.head
+            self.head=self.head.next
+            self.head.prev=last
+            last.next=self.head
+    def traversal3(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal4(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+    def del_middle(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        if(self.head.next==None):
+            return
+        else:
+            last=self.head.prev
+            temp=self.head
+            self.head.next=self.head.next.next
+            self.head.next.next.prev=self.head
+            last.next=self.head
+    def traversal5(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal6(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+    def del_end(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        if(self.head.next==None):
+            return
+        else:
+            last=self.head.prev
+            temp=self.head
+            second_last=last.prev
+            second_last.next=self.head
+            self.head.prev=second_last
+    def traversal7(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal8(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+n1=Node(1)
+n2=Node(2)
+n3=Node(3)
+n4=Node(4)
+n5=Node(5)
+n6=Node(6)
+n7=Node(7)
+n8=Node(8)
+n1.next=n2
+n2.next=n3
+n3.next=n4
+n4.next=n5
+n5.next=n6
+n6.next=n7
+n7.next=n8
+n8.next=n1
+n1.prev=n8
+n2.prev=n1
+n3.prev=n2
+n4.prev=n3
+n5.prev=n4
+n6.prev=n5
+n7.prev=n6
+n8.prev=n7
+d=Dll()
+d.head=n1
+d.del_begin()
+d.traversal1()
+d.traversal2()
+d.del_be()
+d.traversal3()
+d.traversal4()
+d.del_middle()
+d.traversal5()
+d.traversal6()
+d.del_end()
+d.traversal7()
+d.traversal8()
+
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.head=None
+        self.prev=None
+class Dll(object):
+    def __init__(self):
+        self.head=None
+    def insert_begin(self,data):
+        new_node=Node(data)
+        temp=self.head
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=new_node
+            new_node.prev=new_node
+        else:
+            last=self.head.prev
+            new_node.next=self.head
+            self.head.prev=new_node
+            new_node.prev=last
+            last.next=new_node
+            self.head=new_node
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal1(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+    def insert_middle(self,data):
+        new_node=Node(data)
+        temp=self.head
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=new_node
+            new_node.prev=new_node
+        else:
+            temp=self.head
+            last=self.head.prev
+            new_node.next=self.head.next.next
+            self.head.next.next.prev=new_node
+            new_node.prev=self.head.next
+            self.head.next.next=new_node
+    def traversal2(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal3(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+    def insert_end(self,data):
+        new_node=Node(data)
+        temp=self.head
+        if(self.head==None):
+            self.head=new_node
+            new_node.next=new_node
+            new_node.prev=new_node
+        else:
+            temp=self.head
+            last=self.head.prev
+            last.next=new_node
+            new_node.prev=last
+            self.head.prev=new_node
+            new_node.next=self.head
+    def traversal4(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal5(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+n1=Node(1)
+n2=Node(2)
+n3=Node(3)
+n4=Node(4)
+n5=Node(5)
+n6=Node(6)
+n7=Node(7)
+n8=Node(8)
+n1.next=n2
+n2.next=n3
+n3.next=n4
+n4.next=n5
+n5.next=n6
+n6.next=n7
+n7.next=n8
+n8.next=n1
+n1.prev=n8
+n2.prev=n1
+n3.prev=n2
+n4.prev=n3
+n5.prev=n4
+n6.prev=n5
+n7.prev=n6
+n8.prev=n7
+d=Dll()
+d.head=n1
+d.insert_begin(110011)
+d.traversal()
+d.traversal1()
+d.insert_middle(220022)
+d.traversal2()
+d.traversal3()
+d.insert_end(330033)
+d.traversal4()
+d.traversal5()
+
+class Node(object):
+    def __init__(self, data):
+        self.data = data
+        self.next = None
+        self.prev = None
+class Dll(object):
+    def __init__(self):
+        self.head = None
+    def del_begin(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        if(self.head.next==None):
+            return
+        else:
+            temp=self.head
+            last=self.head.prev
+            self.head=self.head.next
+            self.head.prev=last
+            last.next=self.head
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal1(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+    def del_middle(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        if(self.head.next==None):
+            return
+        else:
+            temp=self.head
+            last=self.head.prev
+            self.head.next=self.head.next.next
+            self.head.next.prev=self.head
+    def traversal2(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal3(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+    def del_end(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        if(self.head.next==None):
+            return
+        else:
+            temp=self.head
+            last=self.head.prev
+            second_last=last.prev
+            second_last.next=self.head
+            self.head.prev=second_last
+    def traversal4(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal5(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+n1=Node(1)
+n2=Node(2)
+n3=Node(3)
+n4=Node(4)
+n5=Node(5)
+n6=Node(6)
+n7=Node(7)
+n8=Node(8)
+n1.next=n2
+n2.next=n3
+n3.next=n4
+n4.next=n5
+n5.next=n6
+n6.next=n7
+n7.next=n8
+n8.next=n1
+n1.prev=n8
+n2.prev=n1
+n3.prev=n2
+n4.prev=n3
+n5.prev=n4
+n6.prev=n5
+n7.prev=n6
+n8.prev=n7
+d=Dll()
+d.head=n1
+d.del_begin()
+d.traversal()
+d.traversal1()
+d.del_middle()
+d.traversal2()
+d.traversal3()
+d.del_end()
+d.traversal4()
+d.traversal5()'''
+
+class Node(object):
+    def __init__(self,data):
+        self.data=data
+        self.next=None
+        self.prev=None
+class Dll(object):
+    def __init__(self):
+        self.head=None
+    def del_begin(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        if(self.head.next==None):
+            return
+        else:
+            temp=self.head
+            last=self.head.prev
+            self.head=self.head.next
+            self.head.prev=last
+            last.next=self.head
+    def traversal(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal1(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+    def del_middle(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        if(self.head.next==None):
+            return
+        else:
+            temp=self.head
+            last=self.head.prev
+            self.head.next=self.head.next.next
+            self.head.next.prev=self.head
+    def traversal2(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal3(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+    def del_end(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        if(self.head.next==None):
+            return
+        else:
+            temp=self.head
+            last=self.head.prev
+            second_last=last.prev
+            second_last.next=self.head
+            self.head.prev=second_last
+    def traversal4(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head
+        while True:
+            print(temp.data,"<__",end=" ")
+            temp=temp.next
+            if(temp==self.head):
+                break
+        print("head")
+    def traversal5(self):
+        temp=self.head
+        if(self.head==None):
+            print("empty")
+            return
+        temp=self.head.prev
+        while True:
+            print(temp.data,"__>",end=" ")
+            temp=temp.prev
+            if(temp==self.head.prev):
+                break
+        print("tail")
+    def position(self,key):
+        temp=self.head
+        if(self.head==None):
+            return False
+        temp=self.head
+        while True:
+            if(temp.data==key):
+                return True
+            temp=temp.next
+            if(temp==self.head):
+                break
+        return False
+
+    def position1(self, key):
+        if self.head is None:
+            return False
+        temp = self.head
+        index = 0
+        while True:
+            if temp.data == key:
+                return index
+            temp = temp.next
+            index += 1
+            if temp == self.head:
+                break
+        return False
+n1 = Node(1)
+n2 = Node(2)
+n3 = Node(3)
+n4 = Node(4)
+n5 = Node(5)
+n6 = Node(6)
+n7 = Node(7)
+n8 = Node(8)
+n1.next = n2
+n2.next = n3
+n3.next = n4
+n4.next = n5
+n5.next = n6
+n6.next = n7
+n7.next = n8
+n8.next = n1
+n1.prev = n8
+n2.prev = n1
+n3.prev = n2
+n4.prev = n3
+n5.prev = n4
+n6.prev = n5
+n7.prev = n6
+n8.prev = n7
+d = Dll()
+d.head = n1
+d.del_begin()
+d.traversal()
+d.traversal1()
+d.del_middle()
+d.traversal2()
+d.traversal3()
+d.del_end()
+d.traversal4()
+d.traversal5()
+print(d.position(75))
+print(d.position1(75))
+print(d.position1(75))
