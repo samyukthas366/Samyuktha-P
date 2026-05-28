@@ -1,0 +1,12 @@
+////programm1::////
+#include<stdio.h>
+#define a 20
+const float b=30.0;
+int c=230;
+int main()
+{
+    int d=400;
+    printf("hello sam the value of a is %d\n",a);
+    printf("the value of b and c is %.2f\n and %d\n",b,c);
+    return 0;
+}
