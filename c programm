@@ -55,3 +55,17 @@ int main()
     printf("the value of b and c is %.2f\n and %d\n",b,c);
     return 0;
 }
+
+
+----//program//----
+#include<stdio.h>
+#define B 3.14
+int A=2000;
+int main()
+{
+    int a;    [ //declaraction//]
+    a=3000;   [ //initilazation//]
+    printf("hello print the A=%d\n",A);
+    printf("value of a is a=%d\n",a);
+    return 0;
+}
