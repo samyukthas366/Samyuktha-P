@@ -35,7 +35,7 @@ int main()
     return 0;
 }
 
-----//program5//----
+----//program5//----  [[[MAIN SECTION]]]
 #include<stdio.h>
 int main()
 {
@@ -43,7 +43,44 @@ int main()
     return 0;
 }
 
-----////programm6::////----
+
+
+------////PROGRAM6////----   [[[CONSTANTS IN C]]]
+#include<stdio.h>
+const int a=100;
+int b=200;
+float c=23.56;
+char d='l';
+char t[]="samsrinivas";
+int main()
+{
+    printf("%d\n and %d\n",a,b);
+    printf("%f\n",c);
+    printf("%.2f\n",c);
+    printf("%c\n",d);
+    printf("%s\n",t);
+    return 0;
+}
+
+
+------////PROGRAM7///-----
+#include<stdio.h>
+const int a=200;
+const float b=300;
+const char c='t';
+const char g[]="samsrinivas";
+int a1=100;
+float d=400;
+char e='t';
+char f[]="sammmm";
+int main()
+{
+    printf("%d\n and %f\n and %c\n and %s\n and %d\n and %f\n and %c\n and %s\n",a,b,c,g,a1,d,e,f);
+    return 0;
+}
+
+
+----////programm8::////----
 #include<stdio.h>
 #define a 20
 const float b=30.0;
@@ -57,7 +94,7 @@ int main()
 }
 
 
-----//program//----
+----//program9//----
 #include<stdio.h>
 #define B 3.14
 int A=2000;
