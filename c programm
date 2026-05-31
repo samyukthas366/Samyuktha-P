@@ -80,7 +80,45 @@ int main()
 }
 
 
-----////programm8::////----
+------///program8///-----
+#include<stdio.h>
+const int _1=100;
+const float _2s=20.0;
+const char _3='s';
+const char s[]="samyuthasrinivas";
+int main()
+{
+    int a=123;
+    float b=34.78;
+    char v='1';
+    char o[]="samyusam";
+    printf("%d\n",_1);
+    printf("%f\n",_2s);
+    printf("%c\n",_3);
+    printf("%s\n",s);
+    printf("%d\n",a);
+    printf("%f\n",b);
+    printf("%c\n%s\n",v,o);
+    return 0;
+}
+-----//program9//---
+#include<stdio.h>
+const int a=100;
+const float _b=2.45;
+const char __c='e';
+const char _d_[]="samsrinivas";
+int main()
+{
+    int _a1_=1000;
+    float _b1_=2000;
+    char _c1_='4';
+    char _d1_[]="samyuktha";
+    printf("ok");
+    return 0;
+}
+
+
+----////programm10::////----
 #include<stdio.h>
 #define a 20
 const float b=30.0;
@@ -94,7 +132,7 @@ int main()
 }
 
 
-----//program9//----
+----//program11//----
 #include<stdio.h>
 #define B 3.14
 int A=2000;
