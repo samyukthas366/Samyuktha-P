@@ -144,3 +144,122 @@ int main()
     printf("value of a is a=%d\n",a);
     return 0;
 }
+
+DATATYPES IN C:::
+>>>>>INTEGER<<<<<<<
+
+------PROGRAM1:------
+#include<stdio.h>
+int a=100;
+int b=200;
+int main()
+{
+    printf("%d\n",a);
+    printf("%d\n",b);
+    return 0;
+}
+
+-----PROGRAM2------
+#include<stdio.h>
+int a=100;
+int b=200;
+int main()
+{
+    printf("the sum is :%d",a+b);
+    return 0;
+}
+
+-------PROGRAM3------
+#include<stdio.h>
+int a=100;
+int b=200;
+int main()
+{
+    printf("the product is:%d",a*b);
+    return 0;
+}
+
+--------PROGRAM4------
+#include<stdio.h>
+short int a=200;
+long int b=325346457;
+int main()
+{
+    printf("the sum is:%d",a+b);
+    return 0;
+}
+
+--------PROGRAM5--------
+#include<stdio.h>
+#include<math.h>
+int a=100;
+int b=2000;
+int main()
+{
+    double c=pow(a,2);
+    double d=pow(b,2);
+    printf("the power of the given numbers is:%.0f\n and %.0f\n",c,d);
+    return 0;
+}
+
+
+-------PROGRAM6-----
+#include<stdio.h>
+#include<math.h>
+int a=100.867;
+int b=200.78;
+int main()
+{
+    double c=pow(a,2);
+    double d=pow(b,2);
+    printf("the power is given as the :%.0f\n and %.0f\n",c,d);
+    return 0;
+}
+
+------PROGRAM7-----
+#include<stdio.h>
+int a=101;
+int b=203;
+float c=35.465;
+double d=54.465768795;
+int main()
+{
+    printf("the sum is %.2f\n",a+b+c+d);
+    return 0;
+}
+
+------PROGRAM8------
+#include<stdio.h>
+int a=100;
+float b=35.56;
+double c=45.55676878;
+int main()
+{
+    printf("the product is given as:%.2f",a*b*c);
+    return 0;
+}
+
+-----PROGRAM9------
+#include<stdio.h>
+#include<math.h>
+int a=100; 
+float b=24.45; 
+double c=34.465768678;
+int main()
+{
+    double d=pow(a,2);
+    double e=pow(b,2);
+    double f=pow(c,2);
+    printf("the power is all is given as:%.2f and %.2f and %lf",d,e,f);
+    return 0;
+}  
+
+    
+
+
+
+
+
+
+
+
