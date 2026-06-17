@@ -254,6 +254,67 @@ int main()
     return 0;
 }  
 
+-------program10------
+/*#include<stdio.h>
+int a=100;
+int b=200;
+int main()
+{
+    printf("the sum numbers are :%d\n",a+b);
+    return 0;
+}
+
+#include<stdio.h>
+int a=1000;
+int b=2000;
+int main()
+{
+    printf("the product is:%d\n",a*b);
+    return 0;
+}
+
+#include<stdio.h>
+int a=100;
+int b=200;
+int main()
+{
+    printf("the sub of two numbers is :%d\n",b-a);
+    return 0;
+}
+
+#include<stdio.h>
+#include<math.h>
+int a=1;
+int b=2;
+int main()
+{
+    double c=pow(a,2);
+    double d=pow(b,2);
+    printf("the power is:%.0f\n and %.0f\n",c,d);
+    return 0;
+}
+
+#include<stdio.h>
+int a=100;
+int b=200;
+int main()
+{
+    printf("the division of two numbers is:%d\n",b/a);
+    return 0;
+}
+
+#include<stdio.h>
+#define a 100
+const int b=1000;
+int c=100;
+int d=200;
+int main()
+{
+    printf("the values are a=%d\n b=%d\n c=%d\n d=%d\n",a,b,c,d);
+    return 0;
+}*/
+ 
+
     
 
 
