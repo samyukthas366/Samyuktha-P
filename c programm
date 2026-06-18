@@ -315,7 +315,54 @@ int main()
 }*/
  
 
-    
+///character///[DATA TYPE]
+------program11-----
+#include<stdio.h>
+char a='1';
+char b='2';
+char c='3';
+char d='s';
+char e='a';
+char f='m';
+int main()
+{
+    printf("my name is:%c%c%c%c%c%c",a,b,c,d,e,f);
+    return 0;
+}
+
+----program2-----
+#include<stdio.h>
+char a[]="samyuktha";
+int main()
+{
+    printf("my name is :%s",a);
+    return 0;
+}
+
+----program3------
+#include<stdio.h>
+char a='1';
+char b[]="samyuktha";
+int main()
+{
+    printf("%c%s",a,b);
+    return 0;
+}
+
+-----program4-----
+#include<stdio.h>
+char a='s';
+char b[]="samyuktha";
+int main()
+{
+    printf("%c\n",a);
+    printf("%s\n",b);
+    return 0;
+}
+
+
+
+
 
 
 
