@@ -360,6 +360,93 @@ int main()
     return 0;
 }
 
+------FLOAT------[[[[DATA TYPE]]]]
+----program1-----
+#include<stdio.h>
+float a=10.00;
+float b=20.96;
+int main()
+{
+    printf("the values are a=%f\nb=%f\n",a,b);
+    return 0;
+}
+
+-----program2-----
+#include<stdio.h>
+float a=33.343;
+float b=43.354;
+int main()
+{
+    printf("the values are a=%f\n b=%f\n",a,b);
+    return 0;
+}
+-----program3-----
+#include<stdio.h>
+float a=23.45;
+float b=3.354;
+int main()
+{
+    printf("the sum is %f\n",a+b);
+    return 0;
+}
+
+------program4-----
+#include<stdio.h>
+float a=23.35;
+float b=3.435;
+int main()
+{
+    printf("the product is %f",a*b);
+    return 0;
+}
+
+-----program5-------
+#include<stdio.h>
+float a=23.3543;
+float b=34.343;
+int main()
+{
+    printf("the sub of two numbers is:%f",a-b);
+    return 0;
+}
+
+------program6-----
+#include<stdio.h>
+#include<math.h>
+float a=34.244;
+float b=45.465;
+int main()
+{
+    double c=pow(a,2);
+    double d=pow(b,2);
+    printf("the power is given as%f\n%f\n",c,d);
+    return 0;
+}
+
+TO FIND THE SIZE OF DATATYPE:::
+------program1-----
+#include<stdio.h>
+float a=12.54;
+int main()
+{
+    printf("the size of the float is %zubytes(s)",sizeof(float));
+    return 0;
+}
+
+-----PROGRAM2------
+#include<stdio.h>
+int main()
+{
+    printf("the size of the int is %zubytes(s)\n",sizeof(int));
+    printf("the size of the float is %zubytes(s)\n",sizeof(float));
+    printf("the size of the double is %zubytes(s)\n",sizeof(double));
+    return 0;
+}
+
+
+
+
+
 
 
 
