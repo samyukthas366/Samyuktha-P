@@ -480,6 +480,97 @@ int main(void)
     printf("hello");
 }
 
+======INPUT OUTPUT=======
+----PROGRAM1-----
+#include<stdio.h>
+#define a 100
+const int b=200;
+const float c=546.547;
+int main()
+{
+    int b=300;
+    printf("ok");
+    return 0;
+}
+
+------PROGRAM2----
+#include<stdio.h>
+#define a 30
+const int b=57;
+int main()
+{
+    int s;
+    printf("enter the number:");
+    scanf("%d",&s);
+    printf("the value taken from the user is :%d",s);
+    return 0;
+}
+
+-----PROGRAM3-----
+#include<stdio.h>
+int main()
+{
+    float a;
+    printf("enter the float value:");
+    scanf("%f",&a);
+    printf("the value is %.2f",a);
+    return 0;
+}
+
+-----PROGRAM4-----
+#include<stdio.h>
+int main()
+{
+    char d[100];
+    printf("enter the string:");
+    scanf("%s",&d);
+    printf("the string is given as%s",d);
+    return 0;
+}
+
+------PROGRAM5------
+#include<stdio.h>
+int main()
+{
+    double a;
+    printf("enter the double:");
+    scanf("%lf",&a);
+    printf("the value entered is %.15lf",a);
+    return 0;
+}
+
+------PROGRAM6-------
+#include<stdio.h>
+int main()
+{
+    long double a;
+    printf("enter the number:");
+    scanf("%Lf",&a);
+    printf("the value is given as %.20Lf",a);
+    return 0;
+}
+
+------PROGRAM7-----
+#include<stdio.h>
+void main()
+{
+    int a;
+    printf("enter");
+    scanf("%d",&a);
+    printf("the value is %d",a);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
