@@ -560,7 +560,53 @@ void main()
     printf("the value is %d",a);
 }
 
+#######DATATYES OF DIFFERENT VALUES IN SIGNED AND THEN UNSIGNED########
+----SIGNED---UNSIGNED----
+//for signed of integer
+---PROGRAM1----
+#include<stdio.h>
+int main()
+{
+    int a=100;
+    printf("%d",a);
+    return 0;
+}
 
+----PROGRAM2----
+#include<stdio.h>
+int main()
+{
+    int a=3546546;
+    printf("%d",a);
+    return 0;
+}
+
+----PROGRAM3----
+#include<stdio.h>
+int a=456765856;
+int main()
+{
+    printf("%d",a);
+    return 0;
+}
+
+-----PROGRAM4-----
+#include<stdio.h>
+int a=-1;
+int main()
+{
+    printf("%u",a);
+    return 0;
+}
+
+-----PROGRAM5----
+#include<stdio.h>
+int a=5657568;
+int main()
+{
+    printf("%u",a);
+    return 0;
+}
 
 
 
