@@ -264,6 +264,7 @@ int main()
     return 0;
 }
 
+------PROGRAM11-----
 #include<stdio.h>
 int a=1000;
 int b=2000;
@@ -273,6 +274,7 @@ int main()
     return 0;
 }
 
+------PROGRAM12--------
 #include<stdio.h>
 int a=100;
 int b=200;
@@ -282,6 +284,7 @@ int main()
     return 0;
 }
 
+------PROGRAM13-----
 #include<stdio.h>
 #include<math.h>
 int a=1;
@@ -294,7 +297,7 @@ int main()
     return 0;
 }
 
-------programm------
+------programm14------
 #include<stdio.h>
 int a=100;
 int b=200;
@@ -304,6 +307,7 @@ int main()
     return 0;
 }
 
+------PROGRAM15------
 #include<stdio.h>
 #define a 100
 const int b=1000;
@@ -313,11 +317,12 @@ int main()
 {
     printf("the values are a=%d\n b=%d\n c=%d\n d=%d\n",a,b,c,d);
     return 0;
-}*/
+}
  
 
+
 ///character///[DATA TYPE]
-------program11-----
+------program1-----
 #include<stdio.h>
 char a='1';
 char b='2';
@@ -360,6 +365,42 @@ int main()
     printf("%s\n",b);
     return 0;
 }
+
+------PROGRAM5-----
+#include<stdio.h>
+const char s[]="4365465";
+int main()
+{
+    printf("%s",s);
+    return 0;
+}
+
+-----PROGRAM6-------
+#include<stdio.h>
+const char o[]="&%&%$&^";
+int main()
+{
+    printf("%s",o);
+}
+
+------PROGRAM7------
+#include<stdio.h>
+const char e[242345]="once a girl her name is samyukthasrinivas and she faced many problems when she was in btech but then she relisied that she should take care of her family and finacially good for her family after her btech final year she was attened many interviews and then she finally got god at an hardware company now she is earning 50000 per month this is her first salary in her carieer and now she spend only less part for her daily expenses to save money to build a home";
+int main()
+{
+    printf("%s",e);
+    return 0;
+}
+
+-------PROGRAM8------
+#include<stdio.h>
+const char d[100]="samyukthasrinivas";
+int main()
+{
+    printf("%s",d);
+    return 0;
+}
+
 
 ------FLOAT------[[[[DATA TYPE]]]]
 ----program1-----
